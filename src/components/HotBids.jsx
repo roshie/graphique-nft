@@ -69,7 +69,7 @@ const data = [
   },
 ];
 
-export default function HotBids() {
+export default function HotBids(props) {
   return (
     <div className="container">
       <div className="row">
@@ -77,7 +77,10 @@ export default function HotBids() {
           data.map((list, index) => {
             return (
               <div key={`${list}-${index}`} className="col-6 col-md-3 mb-4">
-                <div className="card shadow rounded-2">
+                <div
+                  className="card shadow rounded-2"
+                  style={{ backgroundColor: props.theme.card }}
+                >
                   <img
                     src={list.image_url}
                     className="img-fluid rounded-2 mx-md-3 ht-25 mx-2 mt-md-3 mt-2"
@@ -85,8 +88,9 @@ export default function HotBids() {
                   />
                   <div className="card-body">
                     <p
-                      className="card-text fw-bold text-dark"
+                      className="card-text fw-bold"
                       style={{
+                        color: props.theme.text,
                         textOverflow: "ellipsis",
                         whiteSpace: "nowrap",
                         overflow: "hidden",
@@ -95,7 +99,10 @@ export default function HotBids() {
                       {list.name}
                     </p>
                     <div className="d-flex align-items-center justify-content-between">
-                      <p className="card-text m-0 text-dark">
+                      <p
+                        className="card-text m-0"
+                        style={{ color: props.theme.text }}
+                      >
                         <span className="fw-bold"> {list.price}</span>&nbsp;ETH
                       </p>
                       <div>
@@ -106,7 +113,9 @@ export default function HotBids() {
                           height="auto"
                           alt={list.name}
                         />
-                        <span className="text-dark">&nbsp;{list.likes}</span>
+                        <span style={{ color: props.theme.text }}>
+                          &nbsp;{list.likes}
+                        </span>
                       </div>
                     </div>
                   </div>
