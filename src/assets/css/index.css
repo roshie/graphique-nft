@@ -115,6 +115,16 @@ h1,
   border-radius: 20px !important;
 }
 
+.rounded-2-top {
+  border-top-left-radius: 20px !important;
+  border-top-right-radius: 20px !important;
+}
+
+.rounded-2-bottom {
+  border-bottom-left-radius: 20px !important;
+  border-bottom-right-radius: 20px !important;
+}
+
 .ht-25 {
   height: 250px !important;
 }
@@ -125,6 +135,10 @@ h1,
 
 .nav-tabs {
   border: none !important;
+}
+
+.modal-content {
+  border-radius: 20px !important;
 }
 
 .btn-primary:hover {
