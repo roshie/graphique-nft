@@ -1,14 +1,14 @@
 import heart from "../assets/images/heart.svg";
 import heartFill from "../assets/images/heart-filled.svg";
 import { colors } from "../theme";
-import { Tab, Nav, Row, Col } from "react-bootstrap";
+import { Tab, Nav, Row, Button } from "react-bootstrap";
 
 export default function Item(props) {
   const loremIpsum =
     "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore omnis ipsam corporis sequi illum qui officiis assumenda, architecto beatae laboriosam dolores voluptatem culpa hic dicta expedita aspernatur fugit, itaque corrupti!";
   return (
     <div className="d-flex justify-content-center flex-column flex-md-row border-ItemRow px-0 px-md-5">
-      <div className="col-12 col-md-7 p-1 p-md-5">
+      <div className="col-12 col-md-6 col-lg-7 p-1 p-md-3 p-lg-5 my-auto">
         <div
           style={{
             // maxWidth: "500px",
@@ -28,10 +28,10 @@ export default function Item(props) {
           />
         </div>
       </div>
-      <div className="col-12 col-md-5 border-Description p-1 p-md-5 d-flex flex-column">
+      <div className="col-12 col-md-6 col-lg-5 border-Description p-1 p-md-3 p-lg-5 d-flex flex-column">
         <div className="d-flex justify-content-between my-2 my-md-0">
           <div className="col-8">
-            <h1>Abstract Smoke Red Blue</h1>
+            <h1>Abstact Smoke Red Blue</h1>
           </div>
           <div className="col-4 d-flex justify-content-end">
             <div
@@ -54,40 +54,73 @@ export default function Item(props) {
           From <span className="p2-bold"> 4.5 ETH </span> · 20 of 25 available
         </p>
         <div className="p3-regular mt-3">Creator</div>
-        <div className="d-flex">
+        <div className="d-flex my-3">
           <img
             src={
               "https://media.discordapp.net/attachments/949602490486226957/949604788566372392/unknown.png"
             }
             alt=""
-            className="rounded-circle mt-2 me-2"
+            className="rounded-circle me-2"
             height="54"
           />
           <div className="p2-bold my-auto">Mia Ayana</div>
         </div>
-        <div>
+        <div className="mt-2">
           <Tab.Container defaultActiveKey="first">
-            <div className="d-flex">
+            <div
+              className="d-flex"
+              style={{ borderBottom: `1px solid ${props.theme.border}` }}
+            >
               <Nav variant="tabs">
                 <Nav.Item>
-                  <Nav.Link className="item p1-regular" eventKey="first">
-                    Tab 1
+                  <Nav.Link className="p1-regular" eventKey="first">
+                    Details
                   </Nav.Link>
                 </Nav.Item>
                 <Nav.Item>
-                  <Nav.Link className="item p1-regular" eventKey="second">
-                    Tab 2
+                  <Nav.Link className="p1-regular" eventKey="second">
+                    Offer
+                  </Nav.Link>
+                </Nav.Item>
+                <Nav.Item>
+                  <Nav.Link className="p1-regular" eventKey="third">
+                    History
                   </Nav.Link>
                 </Nav.Item>
               </Nav>
             </div>
             <Row>
               <Tab.Content>
-                <Tab.Pane eventKey="first">{loremIpsum}</Tab.Pane>
-                <Tab.Pane eventKey="second">{loremIpsum}</Tab.Pane>
+                <Tab.Pane eventKey="first" className="my-4 p1-regular">
+                  {loremIpsum}
+                </Tab.Pane>
+                <Tab.Pane eventKey="second" className="my-4 p1-regular">
+                  {loremIpsum}
+                </Tab.Pane>
+                <Tab.Pane eventKey="third" className="my-4 p1-regular">
+                  {loremIpsum}
+                </Tab.Pane>
               </Tab.Content>
             </Row>
           </Tab.Container>
+        </div>
+        <div className="d-flex mt-2">
+          <Button
+            variant="primary"
+            onClick={() => {}}
+            className="p2-regular"
+            style={{ width: "40%" }}
+          >
+            Buy for 4.5 ETH
+          </Button>
+          <Button
+            variant="outline-primary"
+            className="mx-2 p2-regular"
+            onClick={() => {}}
+            style={{ width: "40%" }}
+          >
+            Make Offer
+          </Button>
         </div>
       </div>
     </div>
