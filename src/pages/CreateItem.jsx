@@ -104,7 +104,7 @@ export default function CreateItem(props) {
               </ul>
             </div>
           </Form.Group>
-          <div className="row justify-content-end">
+          <div className="row justify-content-end my-auto">
             <button className="btn text-light w-25 my-3">Create Item</button>
           </div>
         </Form>
