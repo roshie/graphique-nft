@@ -9,7 +9,7 @@ import Layout from "./components/Layout";
 
 export default function App(props) {
   return (
-    <Layout>
+    <Layout {...props.theme}>
       <div className="min-vh-70">
         <BrowserRouter>
           <Routes>
