@@ -11,6 +11,7 @@ export default function NavBar({ theme }) {
         style={{ borderBottom: ` 1px solid ${theme.theme.border}` }}
       >
         <Container fluid className="mx-2">
+          <div className="d-flex">
           <Navbar.Brand onClick={theme.toggleTheme}>
             <img
               src={logo}
@@ -30,19 +31,19 @@ export default function NavBar({ theme }) {
           >
             Graphique NFT
           </p>
-
           <input
             type="text"
-            className="my-auto mx-3 p-2 ps-4"
+            className="my-auto mx-2 p-2 ps-4 w-md-100"
             placeHolder="Search Item Here"
             style={{
               border: `1px solid ${theme.theme.formBorder}`,
-              width: "500px",
+              maxWidth: "500px",
               borderRadius: "10px",
               backgroundColor: theme.theme.form,
             }}
           />
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
+          </div>
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="ms-auto">
               <Nav.Link href="/" className="p1-regular">

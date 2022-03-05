@@ -31,8 +31,10 @@ export default function Home(props) {
           className="mt-3 mx-2 px-2 mb-4 text-left py-1"
           style={{ fontSize: "22px", fontWeight: "600" }}
         >
-          Hot Bids
+          Items
         </h1>
+      </div>
+      <div className="my-3">
         <HotBids theme={props.theme} />
       </div>
       <div className="align-items-center justfiy-content-center py-2 d-flex flex-column  mb-4">
