@@ -1,7 +1,8 @@
 import React from "react";
 import { Button, Box } from "react-bootstrap";
+import HotBids from "../components/HotBids";
 
-export default function Profile() {
+export default function Profile(props) {
   return (
     <div>
       <div
@@ -65,6 +66,9 @@ export default function Profile() {
               aria-expanded="false"
             />
           </div>
+        </div>
+        <div className="my-3">
+          <HotBids theme={props.theme} />
         </div>
         <Button variant="outline-primary" className="btn outline w-25" href="/">
           Load More
