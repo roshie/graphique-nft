@@ -1,9 +1,8 @@
 import React from "react";
 import Img from "../assets/images/logo-full.svg";
-import Vector1 from "../assets/images/Vector-1.svg";
-import Vector2 from "../assets/images/Vector-2.svg";
-import Vector3 from "../assets/images/Vector-3.svg";
-import Vector from "../assets/images/Vector.svg";
+import { BsInstagram, BsTwitter } from "react-icons/bs";
+import { FaTelegramPlane } from "react-icons/fa";
+import { RiDiscordFill } from "react-icons/ri";
 
 export default function Footer() {
   return (
@@ -51,22 +50,17 @@ export default function Footer() {
             </ul>
           </div>
           <div class="dropdown-divider"></div>
-          <div>
-            <p style={{ fontWeight: "600" }}>
-              Graphique, NITT. All Rights Reserved
-            </p>
-            <div>
-              <img
-                src={Vector}
-                alt="vector"
-                style={{
-                  width: "50px",
-                  height: "50px",
-                }}
-              />
-              <img src={Vector1} alt="vector-1" />
-              <img src={Vector2} alt="vector-2" />
-              <img src={Vector3} alt="vector-3" />
+          <div className="row">
+            <div className="col-md-6 col-12">
+              <p style={{ fontWeight: "600" }}>
+                Graphique, NITT. All Rights Reserved
+              </p>
+            </div>
+            <div className="col-md-6 col-12">
+              <BsInstagram className="social-icons" />
+              <BsTwitter className="social-icons" />
+              <FaTelegramPlane className="social-icons" />
+              <RiDiscordFill className="social-icons" />
             </div>
           </div>
         </div>
