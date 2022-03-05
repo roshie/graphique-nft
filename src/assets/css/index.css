@@ -1,9 +1,37 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap");
+@import url("http://fonts.cdnfonts.com/css/gotham");
 
 body {
   height: 100vh;
   margin: 0;
   padding: 0;
-  font-family: "poppins";
+  font-family: "poppins" !important;
   transition: all 0.25s linear;
+}
+
+.h3,
+h3 {
+  font-weight: 600 !important;
+  font-size: 20px !important;
+  line-height: 30px !important;
+}
+
+.min-vh-70 {
+  min-height: 70vh;
+}
+
+.list-unstyled {
+  padding-left: 0;
+  list-style: none;
+}
+
+.para-1 {
+  font-size: 16px;
+  line-height: 26px;
+}
+
+.social-icons {
+  width: 15px;
+  height: 15px;
+  margin: 8px;
 }
