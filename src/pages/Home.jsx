@@ -12,6 +12,7 @@ export default function Home(props) {
         </div>
       </div>
       <div className="my-3">
+        <p className="fs-5 fw-bold">Top Sellers</p>
         <SliderCards theme={props.theme} />
       </div>
     </>

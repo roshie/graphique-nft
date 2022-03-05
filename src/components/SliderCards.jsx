@@ -59,8 +59,15 @@ export default function SliderCards(theme) {
                       style={{ width: "5rem", height: "5rem" }}
                     />
                     <div class="card-body">
-                      <h5 className="fs-6 fw-bold">{list.name}</h5>
-                      <span className="fw-bold">{list.price}</span> ETH
+                      <h5
+                        className="fs-6 fw-bold"
+                        style={{ color: theme.theme.text }}
+                      >
+                        {list.name}
+                      </h5>
+                      <p style={{ color: theme.theme.text }}>
+                        <span className="fw-bold">{list.price}</span> ETH
+                      </p>
                     </div>
                   </div>
                 );
