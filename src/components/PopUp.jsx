@@ -1,12 +1,14 @@
+import {ArrowLeft} from '../../../assets/images/arrow-left.svg';
+
 export function PopUp(props) {
   return (
     <>
       <div className="container">
         <div className="card">
           <div className="card-body">
-            <i className="fa fa-arrow-left"></i>
+            <img src={ArrowLeft} alt=""/>
             <img
-              src={"lucas-benjamin-wQLAGv4_OYs-unsplash.jpg"}
+              src={"https://images.unsplash.com/photo-1541701494587-cb58502866ab?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"}
               className="card-img-top"
               alt=""
               style={{
