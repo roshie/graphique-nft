@@ -1,5 +1,6 @@
 import { Form, Button } from "react-bootstrap";
 import Image from "../assets/images/image.svg";
+import ImageDark from "../assets/images/imagedark.svg";
 
 export default function CreateItem(props) {
   return (
@@ -24,9 +25,8 @@ export default function CreateItem(props) {
                 JPG, PNG, GIF, SVG, WEBM, MP3, MP4. Max 100mb.
               </h6>
               <img
-                src={Image}
+                src={props.theme.themeName === "light" ? Image : ImageDark}
                 className="img-fluid m-3 w-25"
-                style={{ backgroundColor: props.theme.image }}
                 alt=" "
               />
               <p className="text-center">
