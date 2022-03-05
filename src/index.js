@@ -4,18 +4,11 @@ import App from "./App";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { ThemeProvider } from "styled-components";
 import { GlobalStyles } from "./global";
-import { lightTheme, darkTheme } from "./theme";
-import { useThemeState, useThemeDetector } from "./hooks";
+import { darkTheme } from "./theme";
+import { useThemeState } from "./hooks";
 
 function Index() {
-  const isDarkTheme = useThemeDetector();
-  const [theme, toggleTheme] = useThemeState(
-    isDarkTheme ? darkTheme : lightTheme
-  );
-
-  useEffect(() => {
-    console.debug(theme);
-  }, [theme]);
+  const [theme, toggleTheme] = useThemeState(darkTheme);
 
   const themeProp = {
     theme,

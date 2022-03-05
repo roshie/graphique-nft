@@ -1,6 +1,7 @@
 import React from "react";
 import { Navbar, Container, Nav, Button } from "react-bootstrap";
-import logo from "../assets/images/logo-full.svg";
+import logoLight from "../assets/images/logo-light.svg";
+import logoDark from "../assets/images/logo-dark.svg";
 
 export default function NavBar() {
   return (
@@ -8,7 +9,11 @@ export default function NavBar() {
       <Navbar expand="lg" variant="light">
         <Container fluid className="mx-2">
           <Navbar.Brand href="/">
-            <img src={logo} className="d-inline-block align-top" alt="logo" />
+            <img
+              src={logoLight}
+              className="d-inline-block align-top"
+              alt="React Bootstrap logo"
+            />
           </Navbar.Brand>
           <input
             type="text"
