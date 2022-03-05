@@ -30,11 +30,11 @@ export default function NavBar() {
               <Nav.Link href="/">Explore</Nav.Link>
               <Nav.Link href="/profile">My Items</Nav.Link>
               <Nav.Link href="/profile">Following</Nav.Link>
-              <Button href="/create-item" className="gradient mx-2">
+              <Button variant="outline-light" href="/create-item" className="gradient mx-2">
                 Create
               </Button>
               <Button
-                
+                variant="outline-light"
                 className="gradient mx-2"
                 href="/"
               >
