@@ -24,6 +24,8 @@ export const lightTheme = {
   navLink: colors.grey2,
   navLinkActive: colors.black1,
   border: colors.grey1,
+  image: colors.white,
+  form: colors.white,
   card: colors.white,
   ...props,
 };
@@ -35,6 +37,8 @@ export const darkTheme = {
   navLink: colors.grey3,
   navLinkActive: colors.white,
   border: colors.black1,
+  image: colors.white,
+  form: colors.black1,
   card: colors.black3,
   ...props,
 };
