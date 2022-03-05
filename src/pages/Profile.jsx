@@ -4,13 +4,14 @@ import HotBids from "../components/HotBids";
 import { BsInstagram, BsTwitter } from "react-icons/bs";
 import { FaTelegramPlane } from "react-icons/fa";
 
-export default function Profile(props) {
+export default function Profile(props, { theme }) {
   return (
     <div>
       <div
-        className="card h-25 w-100"
+        className="card h-25 w-100 border-0"
         style={{
-          background: "#24252D",
+          // background: "#24252D",
+          backgroundColor: props.theme.card,
         }}
       >
         <img
@@ -24,7 +25,7 @@ export default function Profile(props) {
         />
         <img
           style={{ marginTop: "-5rem", borderRadius: "50%" }}
-          className="mx-auto border border-black"
+          className="mx-auto border-0 border-black"
           width="130px"
           src="https://media.discordapp.net/attachments/949602490486226957/949604788566372392/unknown.png"
           alt=" "
@@ -47,6 +48,7 @@ export default function Profile(props) {
               className="my-auto p-2 my-2 w-100 rounded-1 align-items-start"
               placeHolder="Search Item Here"
               style={{
+                // border: `1px solid ${theme.theme.formBorder}`,
                 backgroundColor: props.theme.form,
                 border: "none",
               }}
