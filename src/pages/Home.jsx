@@ -1,6 +1,7 @@
 import "../assets/css/Home.css";
 import SliderCards from "../components/SliderCards";
 import HotBids from "../components/HotBids";
+import Check from "../components/CheckOutModal";
 import { Button } from "react-bootstrap";
 
 export default function Home(props) {
@@ -13,6 +14,7 @@ export default function Home(props) {
           </div>
         </div>
       </div>
+      <div className="my-3">{/* <Check  theme={props.theme} /> */}</div>
       <div className="align-items-left mx-5 px-5 py-2">
         <h1
           className="mt-3 mx-2 px-2 mb-4 text-left py-1"
@@ -22,12 +24,13 @@ export default function Home(props) {
         </h1>
         <SliderCards theme={props.theme} />
       </div>
+
       <div className="align-items-left mx-5 px-5">
         <h1
           className="mt-3 mx-2 px-2 mb-4 text-left py-1"
           style={{ fontSize: "22px", fontWeight: "600" }}
         >
-          Items
+          Hot Bids
         </h1>
       </div>
       <div className="my-3">

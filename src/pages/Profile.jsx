@@ -45,7 +45,7 @@ export default function Profile(props, { theme }) {
             <input
               type="text"
               className="my-auto p-2 ms-2 w-100 rounded-1 align-items-start"
-              placeHolder="Search Item Here"
+              placeholder="Search Item Here"
               style={{
                 backgroundColor: props.theme.footer,
                 border: `1px solid ${props.theme.formBorder}`,
