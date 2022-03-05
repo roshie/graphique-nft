@@ -17,4 +17,22 @@ export const GlobalStyles = createGlobalStyle`
   .nav-link .active {
     color: ${({ theme }) => theme.navLinkActive} !important;
   }
+
+  .border-ItemRow {
+    border-bottom: 1px solid ${({ theme }) => theme.border};
+  }
+
+  .border-Description {
+    border-left: 1px solid ${({ theme }) => theme.border};
+  }
+
+  @media (max-width: 768px) {
+    .border-ItemRow {
+      border-bottom: 0px solid ${({ theme }) => theme.border};
+    }
+  
+    .border-Description {
+      border-left: 0px solid ${({ theme }) => theme.border};
+    }
+  }
   `;
