@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import ReactDOM from "react-dom";
 import App from "./App";
 import "bootstrap/dist/css/bootstrap.min.css";
+import "./assets/css/index.css";
 import { ThemeProvider } from "styled-components";
 import { GlobalStyles } from "./global";
 import { darkTheme } from "./theme";

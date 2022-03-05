@@ -23,6 +23,7 @@ export const lightTheme = {
   text: colors.black1,
   navLink: colors.grey2,
   navLinkActive: colors.black1,
+  border: colors.grey1,
   ...props,
 };
 
@@ -32,5 +33,6 @@ export const darkTheme = {
   text: colors.white,
   navLink: colors.grey3,
   navLinkActive: colors.white,
+  border: colors.black1,
   ...props,
 };
