@@ -91,13 +91,25 @@ export default function Item(props) {
             </div>
             <Row>
               <Tab.Content>
-                <Tab.Pane eventKey="first" className="my-4 p1-regular">
+                <Tab.Pane
+                  eventKey="first"
+                  className="my-4 p1-regular"
+                  style={{ color: props.theme.paragraph }}
+                >
                   {loremIpsum}
                 </Tab.Pane>
-                <Tab.Pane eventKey="second" className="my-4 p1-regular">
+                <Tab.Pane
+                  eventKey="second"
+                  className="my-4 p1-regular"
+                  style={{ color: props.theme.paragraph }}
+                >
                   {loremIpsum}
                 </Tab.Pane>
-                <Tab.Pane eventKey="third" className="my-4 p1-regular">
+                <Tab.Pane
+                  eventKey="third"
+                  className="my-4 p1-regular"
+                  style={{ color: props.theme.paragraph }}
+                >
                   {loremIpsum}
                 </Tab.Pane>
               </Tab.Content>
@@ -108,14 +120,14 @@ export default function Item(props) {
           <Button
             variant="primary"
             onClick={() => {}}
-            className="p2-regular"
+            className="p2-regular p-0"
             style={{ width: "40%" }}
           >
             Buy for 4.5 ETH
           </Button>
           <Button
             variant="outline-primary"
-            className="mx-2 p2-regular"
+            className="mx-2 p2-regular p-0 mb-2"
             onClick={() => {}}
             style={{ width: "40%" }}
           >
