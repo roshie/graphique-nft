@@ -1,5 +1,5 @@
 import { Form } from "react-bootstrap";
-import Image from "../assets/images/image.svg";
+import Image from "../assets/images/Image.svg";
 
 export default function CreateItem(props) {
   return (
