@@ -1,4 +1,4 @@
-import { Form } from "react-bootstrap";
+import { Form, Button } from "react-bootstrap";
 import Image from "../assets/images/image.svg";
 
 export default function CreateItem(props) {
@@ -105,7 +105,7 @@ export default function CreateItem(props) {
                   border: `1px solid ${props.theme.formBorder}`,
                 }}
               >
-                eth
+                ETH
               </button>
               <ul class="dropdown-menu dropdown-menu-end">
                 <li>Test</li>
@@ -117,7 +117,7 @@ export default function CreateItem(props) {
             </div>
           </Form.Group>
           <div className="row justify-content-end my-auto">
-            <button className="btn text-light w-25 my-3">Create Item</button>
+            <Button variant="primary" className= "px-0 my-3" style={{width:"150px"}}>Create Item</Button>
           </div>
         </Form>
       </div>

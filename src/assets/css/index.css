@@ -71,7 +71,7 @@ h1,
 }
 
 .min-vh-70 {
-  min-height: 60vh;
+  min-height: 50vh;
 }
 
 .list-unstyled {
@@ -139,6 +139,12 @@ h1,
 
 .modal-content {
   border-radius: 20px !important;
+}
+
+@media (max-width: 576px) {
+  .modal-dialog-centered {
+    align-items: end !important;
+  }
 }
 
 .btn-primary:hover {
