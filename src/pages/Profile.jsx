@@ -40,17 +40,16 @@ export default function Profile(props, { theme }) {
             Mia Ayana
           </p>
         </div>
-        <div className="align-items-left d-flex mx-5 px-3 justify-content-between">
-          <div className="align-items-start w-100 py-4 my-3 d-none d-md-block">
+        <div className="d-flex mx-5 px-5 justify-content-center align-items-center">
+          <div className="align-items-start w-75 py-4 my-3 d-none d-md-block">
             {" "}
             <input
               type="text"
-              className="my-auto p-2 my-2 w-100 rounded-1 align-items-start"
+              className="my-auto p-2 ms-2 w-75 rounded-1 align-items-start"
               placeHolder="Search Item Here"
               style={{
-                // border: `1px solid ${theme.theme.formBorder}`,
-                backgroundColor: props.theme.form,
-                border: "none",
+                backgroundColor: props.theme.footer,
+                border: `1px solid ${props.theme.formBorder}`,
               }}
             />
           </div>
@@ -65,14 +64,20 @@ export default function Profile(props, { theme }) {
                   class="form-control"
                   placeholder="Recently Listed"
                   aria-label="Text input with dropdown button"
-                  style={{ backgroundColor: props.theme.form, border: "none" }}
+                  style={{
+                    backgroundColor: props.theme.form,
+                    border: `1px solid ${props.theme.formBorder}`,
+                  }}
                 />
                 <button
                   class="btn-outline-secondary dropdown-toggle"
                   type="button"
                   data-bs-toggle="dropdown"
                   aria-expanded="false"
-                  style={{ backgroundColor: props.theme.form, border: "none" }}
+                  style={{
+                    backgroundColor: props.theme.form,
+                    border: `1px solid ${props.theme.formBorder}`,
+                  }}
                 />
                 <ul class="dropdown-menu dropdown-menu-end">
                   <li>Test</li>
@@ -98,7 +103,7 @@ export default function Profile(props, { theme }) {
         </div>
         <div className="align-items-center justfiy-content-center py-2 d-flex flex-column  mb-4">
           <Button
-            variant="outline-light"
+            variant="outline-primary"
             className="gradient mx-2 w-25"
             href="/"
           >
