@@ -2,7 +2,7 @@ import "../assets/css/Home.css";
 import SliderCards from "../components/SliderCards";
 import HotBids from "../components/HotBids";
 import Check from "../components/CheckOutModal";
-import {Button} from "react-bootstrap";
+import { Button } from "react-bootstrap";
 
 export default function Home(props) {
   return (
@@ -15,26 +15,42 @@ export default function Home(props) {
         </div>
       </div>
       <div className="my-3">
-        <p className="h1 px-4">Top Sellers</p>
         <Check theme={props.theme} />
       </div>
-      <div className="my-3">
-        <p className="h1 px-4">Top Sellers</p>
+      <div className="align-items-left mx-5 px-5 py-2">
+        <h1
+          className="mt-3 mx-2 px-2 mb-4 text-left py-1"
+          style={{ fontSize: "22px", fontWeight: "600" }}
+        >
+          Top Sellers
+        </h1>
         <SliderCards theme={props.theme} />
       </div>
-      <div className="my-3">
-        <p className="h1 px-4">Hot Bids</p>
+      <div className="align-items-left mx-5 px-5">
+        <h1
+          className="mt-3 mx-2 px-2 mb-4 text-left py-1"
+          style={{ fontSize: "22px", fontWeight: "600" }}
+        >
+          Hot Bids
+        </h1>
         <HotBids theme={props.theme} />
       </div>
       <div className="align-items-center justfiy-content-center py-2 d-flex flex-column  mb-4">
-          <Button
-            variant="outline-primary"
-            className="gradient mx-2 w-25"
-            href="/"
-          >
-            Load More
-          </Button>
-        </div>
+        <Button
+          variant="outline-primary"
+          className="gradient mx-2 w-25 d-none d-md-block"
+          href="/"
+        >
+          Load More
+        </Button>
+        <Button
+          variant="outline-primary d-sm-none"
+          className="gradient mx-2 w-100"
+          href="/"
+        >
+          Load More
+        </Button>
+      </div>
     </>
   );
 }
