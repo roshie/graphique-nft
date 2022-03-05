@@ -64,14 +64,20 @@ export default function Profile(props, { theme }) {
                   class="form-control"
                   placeholder="Recently Listed"
                   aria-label="Text input with dropdown button"
-                  style={{ backgroundColor: props.theme.form, border: `1px solid ${props.theme.formBorder}` }}
+                  style={{
+                    backgroundColor: props.theme.form,
+                    border: `1px solid ${props.theme.formBorder}`,
+                  }}
                 />
                 <button
                   class="btn-outline-secondary dropdown-toggle"
                   type="button"
                   data-bs-toggle="dropdown"
                   aria-expanded="false"
-                  style={{ backgroundColor: props.theme.form, border:`1px solid ${props.theme.formBorder}`}}
+                  style={{
+                    backgroundColor: props.theme.form,
+                    border: `1px solid ${props.theme.formBorder}`,
+                  }}
                 />
                 <ul class="dropdown-menu dropdown-menu-end">
                   <li>Test</li>
@@ -97,7 +103,7 @@ export default function Profile(props, { theme }) {
         </div>
         <div className="align-items-center justfiy-content-center py-2 d-flex flex-column  mb-4">
           <Button
-            variant="outline-light"
+            variant="outline-primary"
             className="gradient mx-2 w-25"
             href="/"
           >
