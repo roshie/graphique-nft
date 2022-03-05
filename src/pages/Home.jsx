@@ -2,7 +2,7 @@ import "../assets/css/Home.css";
 import SliderCards from "../components/SliderCards";
 import HotBids from "../components/HotBids";
 import Check from "../components/CheckOutModal";
-import {Button} from "react-bootstrap";
+import { Button } from "react-bootstrap";
 
 export default function Home(props) {
   return (
@@ -27,14 +27,21 @@ export default function Home(props) {
         <HotBids theme={props.theme} />
       </div>
       <div className="align-items-center justfiy-content-center py-2 d-flex flex-column  mb-4">
-          <Button
-            variant="outline-primary"
-            className="gradient mx-2 w-25"
-            href="/"
-          >
-            Load More
-          </Button>
-        </div>
+        <Button
+          variant="outline-primary"
+          className="gradient mx-2 w-25 d-none d-md-block"
+          href="/"
+        >
+          Load More
+        </Button>
+        <Button
+          variant="outline-primary d-sm-none"
+          className="gradient mx-2 w-100"
+          href="/"
+        >
+          Load More
+        </Button>
+      </div>
     </>
   );
 }
