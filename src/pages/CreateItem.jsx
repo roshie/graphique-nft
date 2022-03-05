@@ -1,5 +1,5 @@
 import { Form, Button } from "react-bootstrap";
-import Image from "../assets/images/image.svg";
+import Image from "../assets/images/Image.svg";
 
 export default function CreateItem(props) {
   return (
@@ -117,7 +117,13 @@ export default function CreateItem(props) {
             </div>
           </Form.Group>
           <div className="row justify-content-end my-auto">
-            <Button variant="primary" className= "px-0 my-3" style={{width:"150px"}}>Create Item</Button>
+            <Button
+              variant="primary"
+              className="px-0 my-3"
+              style={{ width: "150px" }}
+            >
+              Create Item
+            </Button>
           </div>
         </Form>
       </div>

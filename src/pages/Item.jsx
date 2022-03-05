@@ -4,61 +4,72 @@ import { colors } from "../theme";
 import { Tab, Nav, Row, Button } from "react-bootstrap";
 import CheckOutModal from "../components/CheckOutModal";
 import { useState } from "react";
+import { useParams } from "react-router-dom";
+import data from "../nftdata.json";
 
 export default function Item(props) {
   const [openModal, setOpenModal] = useState(false);
+  const [like, setLike] = useState(true);
+  const { id } = useParams();
   const loremIpsum =
     "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore omnis ipsam corporis sequi illum qui officiis assumenda, architecto beatae laboriosam dolores voluptatem culpa hic dicta expedita aspernatur fugit, itaque corrupti!";
+
+  var nftObj = {
+    id: 1,
+    name: "Abstact Smoke Red Blue",
+    price: 1.25,
+    likes: 92,
+    liked: true,
+    image_url:
+      "https://images.unsplash.com/photo-1541701494587-cb58502866ab?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
+  };
+
+  data.forEach((d) => {
+    if (d.id === Number(id)) {
+      nftObj = d;
+    }
+  });
+
   return (
     <div className="d-flex justify-content-center flex-column flex-md-row border-ItemRow px-0 px-md-5">
       <div className="col-12 col-md-6 col-lg-7 p-1 p-md-3 p-lg-5 my-auto">
         <div
-          className="rounded-2 mx-auto"
+          className="rounded-2 mx-auto img-fluid"
           style={{
             height: "500px",
             maxWidth: "500px",
             maxHeight: "500px",
-            backgroundImage: `url(${"https://images.unsplash.com/photo-1541701494587-cb58502866ab?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=8"})`,
+            backgroundImage: `url(${nftObj.image_url})`,
             backgroundPosition: "center",
           }}
-        >
-          {/* <img
-            style={{
-              width: "100%",
-              height: "130%",
-              objectFit: "cover",
-              borderRadius: "18px",
-            }}
-            src="https://images.unsplash.com/photo-1541701494587-cb58502866ab?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=8"
-            alt=""
-            className="img-fluid"
-          /> */}
-        </div>
+        ></div>
       </div>
       <div className="col-12 col-md-6 col-lg-5 border-Description p-1 p-md-3 p-lg-5 d-flex flex-column">
         <div className="d-flex justify-content-between my-2 my-md-0">
           <div className="col-8">
-            <h1>Abstact Smoke Red Blue</h1>
+            <h1>{nftObj.name}</h1>
           </div>
           <div className="col-4 d-flex justify-content-end">
             <div
               className="rounded-pill border px-2 py-1 my-auto d-flex"
               style={{ borderColor: `${colors.grey2}` }}
+              onClick={() => setLike(!like)}
             >
               <img
-                src={heartFill}
+                src={like ? heartFill : heart}
                 alt=""
                 className="img-fluid"
                 width="18"
                 height="auto"
                 style={{ color: "white" }}
               />
-              <span className="mx-1 p2-regular">92</span>
+              <span className="mx-1 p2-regular">{nftObj.likes}</span>
             </div>
           </div>
         </div>
         <p className="p2-regular">
-          From <span className="p2-bold"> 4.5 ETH </span> · 20 of 25 available
+          From <span className="p2-bold"> {nftObj.price} ETH </span> · 20 of 25
+          available
         </p>
         <div className="p3-regular mt-3">Creator</div>
         <div className="d-flex my-3">
@@ -132,7 +143,7 @@ export default function Item(props) {
             className="p2-regular p-0"
             style={{ width: "40%" }}
           >
-            Buy for 4.5 ETH
+            Buy for {nftObj.price} ETH
           </Button>
           <Button
             variant="outline-primary"
@@ -150,6 +161,7 @@ export default function Item(props) {
         show={openModal}
         setShow={setOpenModal}
         theme={props.theme}
+        nftObj={nftObj}
       />
     </div>
   );
