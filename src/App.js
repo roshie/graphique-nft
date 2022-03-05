@@ -5,7 +5,6 @@ import Home from "./pages/Home";
 import Profile from "./pages/Profile";
 import Item from "./pages/Item";
 import CreateItem from "./pages/CreateItem";
-import "./assets/css/index.css";
 import Layout from "./components/Layout";
 
 export default function App(props) {
