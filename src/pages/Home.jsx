@@ -1,7 +1,6 @@
 import "../assets/css/Home.css";
 import SliderCards from "../components/SliderCards";
 import HotBids from "../components/HotBids";
-import Check from "../components/CheckOutModal";
 import { Button } from "react-bootstrap";
 
 export default function Home(props) {
@@ -13,9 +12,6 @@ export default function Home(props) {
             Discover, collect, and sell extraordinary NFTs
           </div>
         </div>
-      </div>
-      <div className="my-3">
-        <Check theme={props.theme} />
       </div>
       <div className="align-items-left mx-5 px-5 py-2">
         <h1
