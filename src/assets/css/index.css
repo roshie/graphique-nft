@@ -35,3 +35,44 @@ h3 {
   height: 15px;
   margin: 8px;
 }
+
+.btn {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 9px 30px;
+  
+  position: static;
+  width: 145px;
+  height: 45px;
+  left: 155px;
+  top: 0px;
+  
+  border-radius: 10px;
+  
+
+  /* Red Linear */
+
+  background: linear-gradient(
+    101.12deg,
+    #eb1484 27.35%,
+    #c91cc3 99.99%,
+    #c81cc5 100%,
+    #c81cc5 100%
+  );
+  /* Inside auto layout */
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  margin: 0px 10px;
+}
+
+.rounded-2 {
+  border-radius: 20px !important;
+}
+
+.ht-25 {
+  height: 250px !important;
+}
