@@ -57,7 +57,7 @@ export default function CreateItem(props) {
             <Form.Control
               type="name"
               placeholder="Item Name"
-              style={{ backgroundColor: props.theme.form, border: "none" }}
+              style={{ backgroundColor: props.theme.form, border: `1px solid ${props.theme.formBorder}` }}
             />
           </Form.Group>
           <Form.Group
@@ -71,7 +71,7 @@ export default function CreateItem(props) {
               as="textarea"
               rows={5}
               placeholder="Description of your item"
-              style={{ backgroundColor: props.theme.form, border: "none" }}
+              style={{ backgroundColor: props.theme.form, border: `1px solid ${props.theme.formBorder}` }}
             />
           </Form.Group>
           <Form.Group className="mb-3" controlId="exampleForm.Select1">
@@ -84,14 +84,14 @@ export default function CreateItem(props) {
                 class="form-control"
                 placeholder="Enter Price"
                 aria-label="Text input with dropdown button"
-                style={{ backgroundColor: props.theme.form, border: "none" }}
+                style={{ backgroundColor: props.theme.form, border: `1px solid ${props.theme.formBorder}` }}
               />
               <button
                 class="btn-outline-secondary dropdown-toggle"
                 type="button"
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
-                style={{ backgroundColor: props.theme.form, border: "none" }}
+                style={{ backgroundColor: props.theme.form, border: `1px solid ${props.theme.formBorder}` }}
               >
                 eth
               </button>
