@@ -41,6 +41,10 @@
   font-family: Gotham;
 }
 
+.nav-border-top {
+  border: none;
+}
+
 @media (max-width: 768px) {
   .card-banner {
     width: 450px;

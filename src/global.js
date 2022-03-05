@@ -11,7 +11,7 @@ export const GlobalStyles = createGlobalStyle`
   }
   
   .navbar-nav > .nav-link {
-    color: ${({ theme }) => theme.navLink} !important;
+    color: ${({ theme }) => theme.navLink} ;
   }
 
   .navbar-nav > .nav-link .active {
@@ -51,6 +51,20 @@ export const GlobalStyles = createGlobalStyle`
   
     .border-Description {
       border-left: 0px solid ${({ theme }) => theme.border};
+    }
+
+    .nav-border-top {
+      border-top: 1px solid ${({ theme }) => theme.border};
+      padding-top: 1.5rem;
+      padding-bottom: 1.5rem;
+      margin-top:65vh;
+    }
+    .navbar-nav > .nav-link {
+      font-weight: bold;
+    }
+
+    .navbar-collapse.show {
+      min-height: 100vh;
     }
   }
   `;
