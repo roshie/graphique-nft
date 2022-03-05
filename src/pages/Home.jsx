@@ -1,19 +1,20 @@
 import Layout from "../components/Layout";
-import { lightTheme, darkTheme } from "../theme";
+import { useThemeState } from "../hooks";
 
 export default function Home() {
+  const [theme, setTheme] = useThemeState("light");
   const toggleTheme = () => {
-    //   if (theme.themeName === "light") {
-    //     setTheme(darkTheme);
-    //   } else {
-    //     setTheme(lightTheme);
-    //   }
+    if (theme === "light") {
+      setTheme("dark");
+    } else {
+      setTheme("light");
+    }
   };
   return (
-    <div>
+    <Layout>
       <button onClick={toggleTheme}>Toggle theme</button>
-      <h1>It's a {darkTheme.themeName} theme!</h1>
+      <h1>It's a {theme} theme!</h1>
       <footer></footer>
-    </div>
+    </Layout>
   );
 }
