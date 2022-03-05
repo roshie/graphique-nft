@@ -38,7 +38,14 @@ export default function Home(props) {
       <div className="align-items-center justfiy-content-center py-2 d-flex flex-column  mb-4">
         <Button
           variant="outline-primary"
-          className="gradient mx-2 w-25"
+          className="gradient mx-2 w-25 d-none d-md-block"
+          href="/"
+        >
+          Load More
+        </Button>
+        <Button
+          variant="outline-primary d-sm-none"
+          className="gradient mx-2 w-100"
           href="/"
         >
           Load More

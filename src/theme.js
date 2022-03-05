@@ -30,6 +30,7 @@ export const lightTheme = {
   footer: colors.white,
   card: colors.white,
   formBorder: colors.grey1,
+  paragraph: colors.grey2,
   ...props,
 };
 
@@ -46,5 +47,6 @@ export const darkTheme = {
   footer: colors.black2,
   card: colors.black3,
   formBorder: colors.dark,
+  paragraph: colors.white,
   ...props,
 };

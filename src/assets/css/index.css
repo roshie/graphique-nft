@@ -11,21 +11,21 @@ body {
 
 .h3,
 h3 {
-  font-weight: 600 !important;
+  font-weight: 520 !important;
   font-size: 20px !important;
   line-height: 30px !important;
 }
 
 h2,
 .h2 {
-  font-weight: 600 !important;
+  font-weight: 520 !important;
   font-size: 24px !important;
   line-height: 36px !important;
 }
 
 h1,
 .h1 {
-  font-weight: 600 !important;
+  font-weight: 520 !important;
   font-size: 28px !important;
   line-height: 42px !important;
 }
@@ -71,7 +71,7 @@ h1,
 }
 
 .min-vh-70 {
-  min-height: 70vh;
+  min-height: 60vh;
 }
 
 .list-unstyled {
@@ -85,8 +85,8 @@ h1,
 }
 
 .social-icons {
-  width: 15px;
-  height: 15px;
+  width: 20px;
+  height: 20px;
   margin: 8px;
 }
 
