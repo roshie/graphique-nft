@@ -7,7 +7,7 @@ export default function Layout({ children , theme}) {
     <>
       <NavBar theme={theme}/>
       <div className="container-fluid">{children}</div>
-      <Footer />
+      <Footer theme={theme}/>
     </>
   );
 }

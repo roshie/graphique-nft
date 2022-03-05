@@ -1,64 +1,83 @@
 import React from "react";
-import logoLight from "../assets/images/logo-light.svg";
-import logoDark from "../assets/images/logo-dark.svg";
+import logo from "../assets/images/logo.svg";
 import { BsInstagram, BsTwitter } from "react-icons/bs";
 import { FaTelegramPlane } from "react-icons/fa";
 import { RiDiscordFill } from "react-icons/ri";
 
-export default function Footer() {
+export default function Footer({ theme }) {
   return (
     <div className="container">
-      <footer>
-        <div className="row">
+      <footer style={{ borderTop: ` 1px solid ${theme.theme.border}` }}>
+        <div className="row mt-5">
           <div className="col-12 col-md px-4">
-            <img src={logoLight} alt="logo" />
+            <div className="d-flex">
+            <img src={logo} alt="logo" />
             <p
-              className="mt-3 mb-4"
-              style={{ fontSize: "16px", fontWeight: "600" }}
+              className="my-auto"
+              style={{
+                fontFamily: "Gotham",
+                fontStyle: "normal",
+                fontWeight: "bold",
+                fontSize: "16px",
+                lineHeight: "18px",
+              }}
+            >
+              Graphique NFT
+            </p>
+            </div>
+            <p
+              className="p1-bold my-3"
             >
               Get the latest updates
             </p>
-            <div className="input-group mb-3">
+            <div className="d-flex mb-3">
               <input
                 type="text"
                 className="form-control"
                 placeholder="Your Email"
                 aria-label="Recipient's username"
                 aria-describedby="basic-addon2"
+                style={{
+                  borderRadius: "10px",
+                  border: `1px solid ${theme.theme.formBorder}`,
+                  backgroundColor: theme.theme.footer,
+                }}
               />
-              <div className="input-group-append">
-                <button className="btn btn-outline-secondary" type="button">
-                  Email Me!
-                </button>
-              </div>{" "}
+
+              <button
+                className="btn m-0 text-light btn-outline-secondary"
+                type="button"
+              >
+                Email Me!
+              </button>
             </div>
           </div>
           <div className="col-6 col-md px-4">
-            <h3>Features</h3>
+            <h3>Graphique NFT</h3>
             <ul className="list-unstyled">
-              <li className="para-1">Explore</li>
-              <li className="para-1">How it works</li>
+              <li className="para-1 mt-4">Explore</li>
+              <li className="para-1 my-2">How it works</li>
               <li className="para-1">Contact us</li>
             </ul>
           </div>
           <div className="col-6 col-md px-4">
             <h3>Support</h3>
             <ul className="list-unstyled">
-              <li className="para-1">Help center</li>
-              <li className="para-1">Terms of service</li>
-              <li className="para-1">Legal</li>
-              <li className="para-1">Privacy policy</li>
+              <li className="para-1 mt-4">Help center</li>
+              <li className="para-1 mt-2">Terms of service</li>
+              <li className="para-1 my-2">Legal</li>
+              <li className="para-1 mb-3">Privacy policy</li>
             </ul>
           </div>
           <div className="dropdown-divider"></div>
-          <div className="row">
+          <div className="row m-3">
             <div className="col-md-6 col-12">
-              <p style={{ fontWeight: "600" }}>
+              <p className="p1-bold ms-2 text-start">
                 Graphique, NITT. All Rights Reserved
               </p>
             </div>
-            <div className="col-md-6 col-12">
-              <BsInstagram className="social-icons" />
+            <div className="col-md-6 col-12 d-flex justify-content-center">
+              <BsInstagram className="social-icons"/>
               <BsTwitter className="social-icons" />
               <FaTelegramPlane className="social-icons" />
               <RiDiscordFill className="social-icons" />

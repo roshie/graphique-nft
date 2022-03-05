@@ -40,6 +40,7 @@ export const darkTheme = {
   border: colors.black1,
   image: colors.white,
   form: colors.black1,
+  footer: colors.black2,
   card: colors.black3,
   formBorder: colors.dark,
   ...props,

@@ -6,7 +6,7 @@ import logo from "../assets/images/logo.svg";
 export default function NavBar({ theme }) {
   return (
     <>
-      <Navbar expand="lg" variant="light" style={{borderBottom: theme.theme.border}}>
+      <Navbar expand="lg" variant="light" style={{borderBottom:` 1px solid ${theme.theme.border}`}}>
         <Container fluid className="mx-2">
           <Navbar.Brand onClick={theme.toggleTheme}>
             <img
@@ -41,12 +41,12 @@ export default function NavBar({ theme }) {
               <Nav.Link href="/" className="p1-regular">Explore</Nav.Link>
               <Nav.Link href="/profile">My Items</Nav.Link>
               <Nav.Link href="/profile">Following</Nav.Link>
-              <Button variant="outline-light" href="/create-item" className="btn gradient mx-2">
+              <Button variant="outline-light" href="/create-item" className="btn text-light gradient mx-2">
                 Create
               </Button>
               <Button
                 variant="outline-light"
-                className="btn gradient mx-2"
+                className="btn text-light gradient ms-1"
                 href="/"
               >
                 Connect
