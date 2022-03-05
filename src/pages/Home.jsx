@@ -1,20 +1,18 @@
 import Layout from "../components/Layout";
-import { useThemeState } from "../hooks";
+import "../assets/css/Home.css";
 
 export default function Home() {
-  const [theme, setTheme] = useThemeState("light");
-  const toggleTheme = () => {
-    if (theme === "light") {
-      setTheme("dark");
-    } else {
-      setTheme("light");
-    }
-  };
   return (
     <Layout>
-      <button onClick={toggleTheme}>Toggle theme</button>
-      <h1>It's a {theme} theme!</h1>
-      <footer></footer>
+      <>
+        <div className="d-flex justify-content-center my-4">
+          <div className="card card-banner p-4">
+            <div className="card-body card-text p-lg-5 fs-1 fw-bold">
+              Discover, collect, and sell extraordinary NFTs
+            </div>
+          </div>
+        </div>
+      </>
     </Layout>
   );
 }
