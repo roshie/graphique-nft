@@ -11,7 +11,7 @@ export default function Profile(props, { theme }) {
         className="card h-25 w-100 border-0"
         style={{
           // background: "#24252D",
-          backgroundColor: props.theme.card,
+          backgroundColor: props.theme.banner,
         }}
       >
         <img
