@@ -1,19 +1,24 @@
-import React from "react";
+import React, { useEffect } from "react";
 import ReactDOM from "react-dom";
 import App from "./App";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { ThemeProvider } from "styled-components";
 import { GlobalStyles } from "./global";
-import { lightTheme, darkTheme } from "./theme";
+import { darkTheme } from "./theme";
 import { useThemeState } from "./hooks";
 
 function Index() {
-  const [theme] = useThemeState("light");
+  const [theme, toggleTheme] = useThemeState(darkTheme);
+
+  const themeProp = {
+    theme,
+    toggleTheme,
+  };
 
   return (
-    <ThemeProvider theme={theme === "light" ? lightTheme : darkTheme}>
+    <ThemeProvider theme={theme}>
       <GlobalStyles />
-      <App />
+      <App theme={themeProp} />
     </ThemeProvider>
   );
 }

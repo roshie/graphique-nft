@@ -1,5 +1,6 @@
 import React from "react";
-import Img from "../assets/images/logo-full.svg";
+import logoLight from "../assets/images/logo-light.svg";
+import logoDark from "../assets/images/logo-dark.svg";
 import { BsInstagram, BsTwitter } from "react-icons/bs";
 import { FaTelegramPlane } from "react-icons/fa";
 import { RiDiscordFill } from "react-icons/ri";
@@ -10,7 +11,7 @@ export default function Footer() {
       <footer>
         <div className="row">
           <div className="col-12 col-md px-4">
-            <img src={Img} alt="logo" />
+            <img src={logoLight} alt="logo" />
             <p
               className="mt-3 mb-4"
               style={{ fontSize: "16px", fontWeight: "600" }}
