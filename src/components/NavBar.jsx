@@ -17,10 +17,11 @@ export default function NavBar() {
           </Navbar.Brand>
           <input
             type="text"
-            className="my-auto w-50 p-2 rounded-2"
+            className="my-auto p-2 rounded-2"
             placeHolder="Search Item Here"
             style={{
               border: "1px solid #E3E1E3",
+              width:"500px"
             }}
           />
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
@@ -29,11 +30,11 @@ export default function NavBar() {
               <Nav.Link href="/">Explore</Nav.Link>
               <Nav.Link href="/profile">My Items</Nav.Link>
               <Nav.Link href="/profile">Following</Nav.Link>
-              <Button href="/create-item" className="gradient mx-2">
+              <Button variant="outline-light" href="/create-item" className="gradient mx-2">
                 Create
               </Button>
               <Button
-                variant="outline-primary"
+                variant="outline-light"
                 className="gradient mx-2"
                 href="/"
               >

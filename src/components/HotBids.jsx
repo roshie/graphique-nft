@@ -87,7 +87,7 @@ export default function HotBids(props) {
                     alt={list.name}
                   />
                   <div className="card-body">
-                    <p
+                    <h6
                       className="card-text fw-bold"
                       style={{
                         color: props.theme.text,
@@ -97,11 +97,11 @@ export default function HotBids(props) {
                       }}
                     >
                       {list.name}
-                    </p>
+                    </h6>
                     <div className="d-flex align-items-center justify-content-between">
                       <p
                         className="card-text m-0"
-                        style={{ color: props.theme.text }}
+                        style={{ color: props.theme.text, fontSize: "14px" }}
                       >
                         <span className="fw-bold"> {list.price}</span>&nbsp;ETH
                       </p>
@@ -113,7 +113,9 @@ export default function HotBids(props) {
                           height="auto"
                           alt={list.name}
                         />
-                        <span style={{ color: props.theme.text }}>
+                        <span
+                          style={{ color: props.theme.text, fontSize: "14px" }}
+                        >
                           &nbsp;{list.likes}
                         </span>
                       </div>
