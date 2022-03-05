@@ -9,8 +9,8 @@ export default function CreateItem() {
         </div>
         <div className="container d-flex justify-content-center">
           <Form className="col-md-6 col-12">
-            {/* <Card className="h-50">
-            </Card> */}
+            <Card className="h-50">
+            </Card>
             <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
               <Form.Label>
                 <b>Name</b>
@@ -77,23 +77,6 @@ export default function CreateItem() {
               </div>
             </Form.Group>
           </Form>
-          <button
-            className="btn"
-            style={{
-              display: "flex",
-              flexdirection: "row",
-              justifycontent: "center",
-              alignitems: "center",
-              padding: "9px 30px",
-              position: "absolute",
-              width: "145px",
-              height: "45px",
-              left: "880px",
-              top: "1276px",
-            }}
-          >
-            Create item
-          </button>
         </div>
     </>
   );
