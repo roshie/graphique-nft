@@ -10,7 +10,10 @@ export default function NavBar({ theme }) {
         variant="light"
         style={{ borderBottom: ` 1px solid ${theme.theme.border}` }}
       >
-        <Container fluid className="mx-2">
+        <Container
+          fluid
+          className="d-flex align-items-center justify-content-between"
+        >
           <Navbar.Brand onClick={theme.toggleTheme}>
             <img
               src={logo}
@@ -30,10 +33,9 @@ export default function NavBar({ theme }) {
           >
             Graphique NFT
           </p>
-
           <input
             type="text"
-            className="my-auto mx-3 p-2 ps-4"
+            className="my-auto me-3 p-2 ps-4"
             placeHolder="Search Item Here"
             style={{
               border: `1px solid ${theme.theme.formBorder}`,
