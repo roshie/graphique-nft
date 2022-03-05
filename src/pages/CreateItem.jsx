@@ -38,7 +38,9 @@ export default function CreateItem(props) {
 
             <div
               style={{
-                border: "dashed 2px",
+                border: `2px dashed ${props.theme.imgDropBorder}`,
+                boxSizing: "border-box",
+                borderRadius: "10px",
                 position: "absolute",
                 top: 0,
                 bottom: 0,
