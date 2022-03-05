@@ -1,5 +1,6 @@
 import React from "react";
-import { Carousel } from "react-bootstrap";
+import Carousel from "react-bootstrap/Carousel";
+import { TiTick } from "react-icons/ti";
 
 const data = [
   {
@@ -37,44 +38,65 @@ const data = [
 export default function SliderCards(theme) {
   return (
     <>
-      <Carousel indicators={false}>
-        <Carousel.Item>
-          <div className="row">
-            {data &&
-              data.map((list, index) => {
-                return (
-                  <div
-                    className="card d-flex align-items-center justify-content-center mx-2"
-                    style={{
-                      backgroundColor: theme.theme.card,
-                      width: "12rem",
-                      height: "12rem",
-                      borderRadius: "1rem",
-                    }}
-                  >
-                    <img
-                      src={list.image_url}
-                      alt="person1"
-                      className="rounded-circle mt-4"
-                      style={{ width: "5rem", height: "5rem" }}
-                    />
-                    <div class="card-body">
-                      <h5
-                        className="fs-6 fw-bold"
-                        style={{ color: theme.theme.text }}
-                      >
-                        {list.name}
-                      </h5>
-                      <p style={{ color: theme.theme.text }}>
-                        <span className="fw-bold">{list.price}</span> ETH
-                      </p>
-                    </div>
-                  </div>
-                );
-              })}
-          </div>
-        </Carousel.Item>
-      </Carousel>
+      <div className="container">
+        <Carousel indicators={false}>
+          <Carousel.Item>
+            <div className="row">
+              <div className="col-12">
+                <div className="row">
+                  {data &&
+                    data.map((list, index) => {
+                      return (
+                        <div
+                          className="d-flex justify-content-center align-items-center card col-xs-2 col-md-4 mx-2"
+                          key={index}
+                          style={{
+                            backgroundColor: theme.theme.card,
+                            width: "12rem",
+                            height: "12rem",
+                            borderRadius: "1rem",
+                          }}
+                        >
+                          <div className="numberCircle p1-bold">
+                            {index + 1}
+                          </div>
+                          <img
+                            src={list.image_url}
+                            alt="person1"
+                            className="rounded-circle mt-4"
+                            style={{ width: "5rem", height: "5rem" }}
+                          />
+                          <div className="status-circle">
+                            <TiTick
+                              className="symbol"
+                              style={{ color: theme.theme.text }}
+                              size="1rem"
+                            />
+                          </div>
+                          <div className="card-body">
+                            <h5
+                              className="p1-bold"
+                              style={{ color: theme.theme.text }}
+                            >
+                              {list.name}
+                            </h5>
+                            <p
+                              className="text-center"
+                              style={{ color: theme.theme.text }}
+                            >
+                              <span className="p1-bold">{list.price}</span>{" "}
+                              <span className="p1-regular">ETH</span>
+                            </p>
+                          </div>
+                        </div>
+                      );
+                    })}
+                </div>
+              </div>
+            </div>
+          </Carousel.Item>
+        </Carousel>
+      </div>
     </>
   );
 }

@@ -13,10 +13,11 @@ export default function Home(props) {
         </div>
       </div>
       <div className="my-3">
-        <p className="fs-5 fw-bold">Top Sellers</p>
+        <p className="h1 px-4">Top Sellers</p>
         <SliderCards theme={props.theme} />
       </div>
       <div className="my-3">
+        <p className="h1 px-4">Hot Bids</p>
         <HotBids theme={props.theme} />
       </div>
     </>
