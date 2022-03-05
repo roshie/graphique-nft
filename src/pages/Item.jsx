@@ -68,14 +68,14 @@ export default function Item(props) {
         <div>
           <Tab.Container defaultActiveKey="first">
             <div className="d-flex">
-              <Nav>
+              <Nav variant="tabs">
                 <Nav.Item>
-                  <Nav.Link className="item" eventKey="first">
+                  <Nav.Link className="item p1-regular" eventKey="first">
                     Tab 1
                   </Nav.Link>
                 </Nav.Item>
                 <Nav.Item>
-                  <Nav.Link className="item" eventKey="second">
+                  <Nav.Link className="item p1-regular" eventKey="second">
                     Tab 2
                   </Nav.Link>
                 </Nav.Item>
