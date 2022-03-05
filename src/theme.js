@@ -27,8 +27,9 @@ export const lightTheme = {
   borderActive: colors.black1,
   image: colors.white,
   form: colors.white,
+  footer: colors.white,
   card: colors.white,
-  formBorder: colors.grey2,
+  formBorder: colors.grey1,
   ...props,
 };
 

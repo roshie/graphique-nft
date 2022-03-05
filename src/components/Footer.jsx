@@ -3,6 +3,7 @@ import logo from "../assets/images/logo.svg";
 import { BsInstagram, BsTwitter } from "react-icons/bs";
 import { FaTelegramPlane } from "react-icons/fa";
 import { RiDiscordFill } from "react-icons/ri";
+import { Button } from "react-bootstrap";
 
 export default function Footer({ theme }) {
   return (
@@ -44,12 +45,12 @@ export default function Footer({ theme }) {
                 }}
               />
 
-              <button
-                className="btn m-0 text-light btn-outline-secondary"
-                type="button"
+              <Button
+                className="m-0"
+                variant="primary"
               >
                 Email Me!
-              </button>
+              </Button>
             </div>
           </div>
           <div className="col-6 col-md px-4">
@@ -70,9 +71,9 @@ export default function Footer({ theme }) {
             </ul>
           </div>
           <div className="dropdown-divider"></div>
-          <div className="row m-3">
+          <div className="row ms-1">
             <div className="col-md-6 col-12">
-              <p className="p1-bold ms-2 text-start">
+              <p className="p1-bold text-start">
                 Graphique, NITT. All Rights Reserved
               </p>
             </div>
