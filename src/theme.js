@@ -1,6 +1,6 @@
 export const lightTheme = {
   themeName: "light",
-  body: "#000000",
+  body: "#FFFFFF",
   text: "#363537",
   primary: "#DA18A3",
   gradient: "linear-gradient(#EB1484, #C81CC5)",
