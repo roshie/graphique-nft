@@ -1,5 +1,5 @@
 import React from "react";
-import { Button } from "react-bootstrap";
+import { Button, Box } from "react-bootstrap";
 
 export default function Profile() {
   return (
@@ -34,18 +34,24 @@ export default function Profile() {
           Mia Ayana
         </p>
         <div className="py-2 d-flex justify-content-between align-items-center">
-          <div class="input-group mb-3 p-2 py-2">
-            {" "}
-            <input
-              type="text"
-              className="my-auto w-100 p-1 rounded-2 align-items-start"
-              placeHolder="Search Item Here"
-              style={{
-                border: "1px solid #E3E1E3",
-              }}
-            />
+          <div class="input-group mb-3 p-2 py-2 d-flex alin-items-start">
+            <div> </div>
+            <div>
+              {" "}
+              <input
+                type="text"
+                className="my-auto w-100 p-1 rounded-1 align-items-start"
+                placeHolder="Search Item Here"
+                style={{
+                  border: "1px solid #E3E1E3",
+                }}
+              />
+            </div>
           </div>
-          <div class="input-group mb-3 p-2 py-2">
+          <div
+            class="input-group mb-3 p-2 py-2 align-items-end dropdown d-flex"
+            sx={{ display: "flex", alignItems: "flex-end" }}
+          >
             <input
               type="text"
               class="form-control py-1 w-75"
@@ -53,14 +59,14 @@ export default function Profile() {
               aria-label="Text input with dropdown button"
             />
             <button
-              class="btn btn-outline-light dropdown-toggle"
+              class="btn-outline-secondary dropdown-toggle py-1 "
               type="button"
               data-bs-toggle="dropdown"
               aria-expanded="false"
-            ></button>
+            />
           </div>
         </div>
-        <Button variant="outline-primary" className="btn outline" href="/">
+        <Button variant="outline-primary" className="btn outline w-25" href="/">
           Load More
         </Button>
       </div>
