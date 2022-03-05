@@ -91,12 +91,12 @@ export default function Profile(props, { theme }) {
           </div>
         </div>
         <div className="align-items-left mx-5 px-5">
-          <p
+          <h1
             className="mt-3 mx-2 px-2 mb-4 text-left py-1"
             style={{ fontSize: "22px", fontWeight: "600" }}
           >
             Items
-          </p>
+          </h1>
         </div>
         <div className="my-3">
           <HotBids theme={props.theme} />
