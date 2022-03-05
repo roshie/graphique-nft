@@ -1,5 +1,5 @@
 import { Form } from "react-bootstrap";
-import Image from "../assets/images/Image.svg";
+import Image from "../assets/images/image.svg";
 
 export default function CreateItem(props) {
   return (
@@ -57,7 +57,10 @@ export default function CreateItem(props) {
             <Form.Control
               type="name"
               placeholder="Item Name"
-              style={{ backgroundColor: props.theme.form, border: `1px solid ${props.theme.formBorder}` }}
+              style={{
+                backgroundColor: props.theme.form,
+                border: `1px solid ${props.theme.formBorder}`,
+              }}
             />
           </Form.Group>
           <Form.Group
@@ -71,7 +74,10 @@ export default function CreateItem(props) {
               as="textarea"
               rows={5}
               placeholder="Description of your item"
-              style={{ backgroundColor: props.theme.form, border: `1px solid ${props.theme.formBorder}` }}
+              style={{
+                backgroundColor: props.theme.form,
+                border: `1px solid ${props.theme.formBorder}`,
+              }}
             />
           </Form.Group>
           <Form.Group className="mb-3" controlId="exampleForm.Select1">
@@ -84,14 +90,20 @@ export default function CreateItem(props) {
                 class="form-control"
                 placeholder="Enter Price"
                 aria-label="Text input with dropdown button"
-                style={{ backgroundColor: props.theme.form, border: `1px solid ${props.theme.formBorder}` }}
+                style={{
+                  backgroundColor: props.theme.form,
+                  border: `1px solid ${props.theme.formBorder}`,
+                }}
               />
               <button
                 class="btn-outline-secondary dropdown-toggle"
                 type="button"
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
-                style={{ backgroundColor: props.theme.form, border: `1px solid ${props.theme.formBorder}` }}
+                style={{
+                  backgroundColor: props.theme.form,
+                  border: `1px solid ${props.theme.formBorder}`,
+                }}
               >
                 eth
               </button>
