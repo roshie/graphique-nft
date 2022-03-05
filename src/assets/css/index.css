@@ -35,3 +35,11 @@ h3 {
   height: 15px;
   margin: 8px;
 }
+
+.rounded-2 {
+  border-radius: 20px !important;
+}
+
+.ht-25 {
+  height: 250px !important;
+}
