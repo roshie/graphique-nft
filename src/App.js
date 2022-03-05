@@ -1,26 +1,21 @@
-import React, { useState } from "react";
-import { ThemeProvider } from "styled-components";
-import { lightTheme, darkTheme } from "./theme";
-import { GlobalStyles } from "./global";
+import React from "react";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
-function App() {
-  const [theme, setTheme] = useState(lightTheme);
-  const toggleTheme = () => {
-    if (theme.themeName === "light") {
-      setTheme(darkTheme);
-    } else {
-      setTheme(lightTheme);
-    }
-  };
+import Home from "./pages/Home";
+import Profile from "./pages/Profile";
+import Item from "./pages/Item";
+import CreateItem from "./pages/CreateItem";
+import "./assets/css/index.css";
 
+export default function App() {
   return (
-    <ThemeProvider theme={theme}>
-      <GlobalStyles />
-      <button onClick={toggleTheme}>Toggle theme</button>
-      <h1>It's a {theme.themeName} theme!</h1>
-      <footer></footer>
-    </ThemeProvider>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/profile" element={<Profile />} />
+        <Route path="/item/:id" element={<Item />} />
+        <Route path="/create-item" element={<CreateItem />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
-
-export default App;
