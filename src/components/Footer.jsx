@@ -22,7 +22,7 @@ export default function Footer() {
               <input
                 type="text"
                 className="form-control"
-                placeHolder="Your Email"
+                placeholder="Your Email"
                 aria-label="Recipient's username"
                 aria-describedby="basic-addon2"
               />
