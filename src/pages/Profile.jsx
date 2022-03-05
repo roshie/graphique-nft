@@ -45,7 +45,7 @@ export default function Profile(props, { theme }) {
             {" "}
             <input
               type="text"
-              className="my-auto p-2 ms-2 w-75 rounded-1 align-items-start"
+              className="my-auto p-2 ms-2 w-100 rounded-1 align-items-start"
               placeHolder="Search Item Here"
               style={{
                 backgroundColor: props.theme.footer,
@@ -53,9 +53,9 @@ export default function Profile(props, { theme }) {
               }}
             />
           </div>
-          <div className="w-25 mx-3 align-items-end d-none d-md-block">
+          <div className="w-25 mx-4 align-items-end d-none d-md-block">
             <Form.Group
-              className="mb-3 py-3 my-4"
+              className="mb-3 py-3 my-4 p-4"
               controlId="exampleForm.Select1"
             >
               <div class="input-group mb-3">
