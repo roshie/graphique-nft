@@ -11,13 +11,10 @@ export default function App(props) {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<Home theme={props.themeProp} />} />
-        <Route path="/profile" element={<Profile theme={props.themeProp} />} />
-        <Route path="/item/:id" element={<Item theme={props.themeProp} />} />
-        <Route
-          path="/create-item"
-          element={<CreateItem theme={props.themeProp} />}
-        />
+        <Route path="/" element={<Home {...props.theme} />} />
+        <Route path="/profile" element={<Profile {...props.theme} />} />
+        <Route path="/item/:id" element={<Item {...props.theme} />} />
+        <Route path="/create-item" element={<CreateItem {...props.theme} />} />
       </Routes>
     </BrowserRouter>
   );
