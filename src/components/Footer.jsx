@@ -6,7 +6,7 @@ import { RiDiscordFill } from "react-icons/ri";
 
 export default function Footer() {
   return (
-    <div className="container fixed-bottom">
+    <div className="container">
       <footer>
         <div className="row">
           <div className="col-12 col-md px-4">
@@ -49,7 +49,7 @@ export default function Footer() {
               <li className="para-1">Privacy policy</li>
             </ul>
           </div>
-          <div class="dropdown-divider"></div>
+          <div className="dropdown-divider"></div>
           <div className="row">
             <div className="col-md-6 col-12">
               <p style={{ fontWeight: "600" }}>
