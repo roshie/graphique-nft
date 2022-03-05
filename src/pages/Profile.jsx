@@ -44,10 +44,10 @@ export default function Profile(props) {
               <input
                 type="text"
                 className="my-auto p-1 rounded-1 align-items-start"
-                placeHolder="Search Item Here"
+                placeholder="Search Item Here"
                 style={{
                   backgroundColor: props.theme.form,
-                  border: "none"
+                  border: "none",
                 }}
               />
             </div>
@@ -57,30 +57,30 @@ export default function Profile(props) {
             sx={{ display: "flex", alignItems: "flex-end" }}
           >
             <Form.Group className="mb-3" controlId="exampleForm.Select1">
-            <div class="input-group mb-3">
-              <input
-                type="text"
-                class="form-control"
-                placeholder="Recently Listed"
-                aria-label="Text input with dropdown button"
-                style={{ backgroundColor: props.theme.form, border: "none" }}
-              />
-              <button
-                class="btn-outline-secondary dropdown-toggle"
-                type="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-                style={{ backgroundColor: props.theme.form, border: "none" }}
-              />
-              <ul class="dropdown-menu dropdown-menu-end">
-                <li>Test</li>
-                <li>Test</li>
-                <li>
-                  <hr class="dropdown-divider" />
-                </li>
-              </ul>
-            </div>
-          </Form.Group>
+              <div class="input-group mb-3">
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Recently Listed"
+                  aria-label="Text input with dropdown button"
+                  style={{ backgroundColor: props.theme.form, border: "none" }}
+                />
+                <button
+                  class="btn-outline-secondary dropdown-toggle"
+                  type="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                  style={{ backgroundColor: props.theme.form, border: "none" }}
+                />
+                <ul class="dropdown-menu dropdown-menu-end">
+                  <li>Test</li>
+                  <li>Test</li>
+                  <li>
+                    <hr class="dropdown-divider" />
+                  </li>
+                </ul>
+              </div>
+            </Form.Group>
           </div>
         </div>
         <div className="my-3">
