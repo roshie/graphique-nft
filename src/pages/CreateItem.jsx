@@ -1,5 +1,5 @@
 import { Card, Form } from "react-bootstrap";
-import Image from "../assets/images/image.svg";
+import Image from "../assets/images/Image.svg";
 
 export default function CreateItem() {
   return (
@@ -17,25 +17,37 @@ export default function CreateItem() {
             className="d-flex justify-content-center"
             style={{ position: "relative" }}
           >
-            <div className="d-flex row justify-content-center align-items-center" >
-              <h6 className="text-center mt-2">JPG, PNG, GIF, SVG, WEBM, MP3, MP4. Max 100mb.</h6>
-            <img src={Image} className="img-fluid m-3 w-25 bg-white" alt=" " />
-            <p className="text-center"> Drag and Drop File <br/>or browse media on your device</p>
+            <div className="d-flex row justify-content-center align-items-center">
+              <h6 className="text-center mt-2">
+                JPG, PNG, GIF, SVG, WEBM, MP3, MP4. Max 100mb.
+              </h6>
+              <img
+                src={Image}
+                className="img-fluid m-3 w-25 bg-white"
+                alt=" "
+              />
+              <p className="text-center">
+                {" "}
+                Drag and Drop File <br />
+                or browse media on your device
+              </p>
             </div>
-            
-              <div
-                style={{
-                  border: "dashed 2px",
-                  position: "absolute",
-                  top: 0,
-                  bottom: 0,
-                  left: 0,
-                  right: 0,
-                }}
-              >
-              </div>
+
+            <div
+              style={{
+                border: "dashed 2px",
+                position: "absolute",
+                top: 0,
+                bottom: 0,
+                left: 0,
+                right: 0,
+              }}
+            ></div>
           </div>
-          <Form.Group className="mb-3 mt-3" controlId="exampleForm.ControlInput1">
+          <Form.Group
+            className="mb-3 mt-3"
+            controlId="exampleForm.ControlInput1"
+          >
             <Form.Label>
               <b>Name</b>
             </Form.Label>
