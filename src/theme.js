@@ -21,6 +21,7 @@ export const lightTheme = {
   themeName: "light",
   body: colors.white,
   text: colors.black1,
+  banners: colors.white,
   navLink: colors.grey2,
   navLinkActive: colors.black1,
   border: colors.grey1,
@@ -37,6 +38,7 @@ export const lightTheme = {
 export const darkTheme = {
   themeName: "dark",
   body: colors.dark,
+  banner: colors.dark,
   text: colors.white,
   navLink: colors.grey3,
   navLinkActive: colors.white,

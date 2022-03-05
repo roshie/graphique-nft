@@ -31,7 +31,6 @@ export default function NavBar({ theme }) {
           >
             Graphique NFT
           </p>
-
           <input
             type="text"
             className="my-auto mx-2 p-2 ps-4 w-md-100"
