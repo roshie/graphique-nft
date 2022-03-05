@@ -130,6 +130,10 @@ h1,
   height: 250px !important;
 }
 
-.search{
+.search {
   margin-right: -10px;
+}
+
+.item .nav-link .active {
+  border-bottom: 1px solid #e3e1e3;
 }

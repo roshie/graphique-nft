@@ -10,11 +10,29 @@ export const GlobalStyles = createGlobalStyle`
     color: ${({ theme }) => theme.text} !important;
   }
   
-  .nav-link {
+  .navbar-nav > .nav-link {
     color: ${({ theme }) => theme.navLink} !important;
   }
 
-  .nav-link .active {
+  .navbar-nav > .nav-link .active {
     color: ${({ theme }) => theme.navLinkActive} !important;
+  }
+
+  .border-ItemRow {
+    border-bottom: 1px solid ${({ theme }) => theme.border};
+  }
+
+  .border-Description {
+    border-left: 1px solid ${({ theme }) => theme.border};
+  }
+
+  @media (max-width: 768px) {
+    .border-ItemRow {
+      border-bottom: 0px solid ${({ theme }) => theme.border};
+    }
+  
+    .border-Description {
+      border-left: 0px solid ${({ theme }) => theme.border};
+    }
   }
   `;
