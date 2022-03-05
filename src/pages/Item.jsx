@@ -13,12 +13,16 @@ export default function Item(props) {
     <div className="d-flex justify-content-center flex-column flex-md-row border-ItemRow px-0 px-md-5">
       <div className="col-12 col-md-6 col-lg-7 p-1 p-md-3 p-lg-5 my-auto">
         <div
+          className="rounded-2 mx-auto"
           style={{
-            // maxWidth: "500px",
+            height: "500px",
+            maxWidth: "500px",
             maxHeight: "500px",
+            backgroundImage: `url(${"https://images.unsplash.com/photo-1541701494587-cb58502866ab?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=8"})`,
+            backgroundPosition: "center",
           }}
         >
-          <img
+          {/* <img
             style={{
               width: "100%",
               height: "130%",
@@ -28,7 +32,7 @@ export default function Item(props) {
             src="https://images.unsplash.com/photo-1541701494587-cb58502866ab?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=8"
             alt=""
             className="img-fluid"
-          />
+          /> */}
         </div>
       </div>
       <div className="col-12 col-md-6 col-lg-5 border-Description p-1 p-md-3 p-lg-5 d-flex flex-column">

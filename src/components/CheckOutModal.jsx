@@ -51,7 +51,7 @@ export default function CheckOutModal(props) {
                 Abstact Smoke Red Blue
               </p>
             </div>
-            <div className="flex-column d-sm-none my-3">
+            <div className="flex-column d-md-none my-3">
               <p
                 style={{ color: props.theme.text, fontSize: "14px" }}
                 className="fw-bold m-0"
