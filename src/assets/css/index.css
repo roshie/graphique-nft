@@ -35,7 +35,7 @@ h1,
   line-height: 26px;
 }
 .p1-bold {
-  font-weight: 600;
+  font-weight: 500;
   font-size: 16px;
   line-height: 24px;
 }
@@ -105,17 +105,6 @@ h1,
 
   border-radius: 10px;
 
-  /* Red Linear */
-
-  background: linear-gradient(
-    101.12deg,
-    #eb1484 27.35%,
-    #c91cc3 99.99%,
-    #c81cc5 100%,
-    #c81cc5 100%
-  );
-  /* Inside auto layout */
-
   flex: none;
   order: 0;
   flex-grow: 0;
@@ -134,6 +123,60 @@ h1,
   margin-right: -10px;
 }
 
-.item .nav-link .active {
-  border-bottom: 1px solid #e3e1e3;
+.nav-tabs {
+  border: none !important;
+}
+
+.btn-primary:hover {
+  box-shadow: 0 0 0 0.25rem #da18a37c !important;
+  border-color: #da18a3 !important;
+}
+
+.btn-primary:focus {
+  box-shadow: 0 0 0 0.25rem #da18a37c !important;
+  border-color: #da18a3 !important;
+}
+
+.btn-primary {
+  border-color: #da18a3;
+  color: #fff !important;
+  background: linear-gradient(
+    101.12deg,
+    #eb1484 27.35%,
+    #c91cc3 99.99%,
+    #c81cc5 100%,
+    #c81cc5 100%
+  ) !important;
+}
+
+.btn-outline-primary {
+  border-color: #da18a3;
+  color: #da18a3 !important;
+  font-weight: 510;
+}
+
+.btn-outline-primary:hover {
+  box-shadow: 0 0 0 0.25rem #da18a37c !important;
+  border-color: #da18a3 !important;
+  color: #fff !important;
+  background: linear-gradient(
+    101.12deg,
+    #eb1484 27.35%,
+    #c91cc3 99.99%,
+    #c81cc5 100%,
+    #c81cc5 100%
+  ) !important;
+}
+
+.btn-outline-primary:focus {
+  box-shadow: 0 0 0 0.25rem #da18a37c !important;
+  border-color: #da18a3 !important;
+  color: #fff !important;
+  background: linear-gradient(
+    101.12deg,
+    #eb1484 27.35%,
+    #c91cc3 99.99%,
+    #c81cc5 100%,
+    #c81cc5 100%
+  ) !important;
 }
