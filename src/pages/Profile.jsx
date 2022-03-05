@@ -1,7 +1,8 @@
 import React from "react";
-import { Button, Box } from "react-bootstrap";
+import { Button, Form } from "react-bootstrap";
+import HotBids from "../components/HotBids";
 
-export default function Profile() {
+export default function Profile(props) {
   return (
     <div>
       <div
@@ -40,10 +41,11 @@ export default function Profile() {
               {" "}
               <input
                 type="text"
-                className="my-auto w-100 p-1 rounded-1 align-items-start"
+                className="my-auto p-1 rounded-1 align-items-start"
                 placeHolder="Search Item Here"
                 style={{
-                  border: "1px solid #E3E1E3",
+                  backgroundColor: props.theme.form,
+                  border: "none"
                 }}
               />
             </div>
@@ -52,19 +54,35 @@ export default function Profile() {
             class="input-group mb-3 p-2 py-2 align-items-end dropdown d-flex"
             sx={{ display: "flex", alignItems: "flex-end" }}
           >
-            <input
-              type="text"
-              class="form-control py-1 w-75"
-              placeholder="Recently Entered"
-              aria-label="Text input with dropdown button"
-            />
-            <button
-              class="btn-outline-secondary dropdown-toggle py-1 "
-              type="button"
-              data-bs-toggle="dropdown"
-              aria-expanded="false"
-            />
+            <Form.Group className="mb-3" controlId="exampleForm.Select1">
+            <div class="input-group mb-3">
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Recently Listed"
+                aria-label="Text input with dropdown button"
+                style={{ backgroundColor: props.theme.form, border: "none" }}
+              />
+              <button
+                class="btn-outline-secondary dropdown-toggle"
+                type="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+                style={{ backgroundColor: props.theme.form, border: "none" }}
+              />
+              <ul class="dropdown-menu dropdown-menu-end">
+                <li>Test</li>
+                <li>Test</li>
+                <li>
+                  <hr class="dropdown-divider" />
+                </li>
+              </ul>
+            </div>
+          </Form.Group>
           </div>
+        </div>
+        <div className="my-3">
+          <HotBids theme={props.theme} />
         </div>
         <Button variant="outline-primary" className="btn outline w-25" href="/">
           Load More
