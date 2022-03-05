@@ -1,37 +1,37 @@
 import React from "react";
 import Carousel from "react-bootstrap/Carousel";
 import { TiTick } from "react-icons/ti";
+import person2 from "../assets/images/bulbul.png";
+import lady from "../assets/images/lady.png";
+import Rian from "../assets/images/Rian.png";
+import mia from "../assets/images/mia.png";
+import budiman from "../assets/images/budiman.png";
 
 const data = [
   {
     name: "Mia Ayana",
     price: 5.25,
-    image_url:
-      "https://images.unsplash.com/photo-1541701494587-cb58502866ab?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
+    image_url: mia,
   },
   {
     name: "Rian Leon",
     price: 4.932,
-    image_url:
-      "https://images.unsplash.com/photo-1541701494587-cb58502866ab?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
+    image_url: Rian,
   },
   {
     name: "Lady Young",
     price: 4.62,
-    image_url:
-      "https://images.unsplash.com/photo-1543857778-c4a1a3e0b2eb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1010&q=80",
+    image_url: lady,
   },
   {
     name: "Black Glass",
     price: 4.125,
-    image_url:
-      "https://images.unsplash.com/photo-1549490349-8643362247b5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80",
+    image_url: person2,
   },
   {
     name: "Budhiman",
     price: 3.921,
-    image_url:
-      "https://www.concrete-online.co.uk/wp-content/uploads/2020/11/content-pixie-woMD-vhzOHI-unsplash-scaled.jpg",
+    image_url: budiman,
   },
 ];
 

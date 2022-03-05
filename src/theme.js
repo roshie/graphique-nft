@@ -27,6 +27,7 @@ export const lightTheme = {
   image: colors.white,
   form: colors.white,
   card: colors.white,
+  formBorder: colors.grey2,
   ...props,
 };
 
@@ -40,5 +41,6 @@ export const darkTheme = {
   image: colors.white,
   form: colors.black1,
   card: colors.black3,
+  formBorder: colors.dark,
   ...props,
 };

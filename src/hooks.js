@@ -2,19 +2,24 @@ import { useState, useEffect } from "react";
 import { lightTheme, darkTheme } from "./theme";
 
 export function useThemeState(initialTheme) {
-  const [theme, setTheme] = useState(initialTheme);
+  const initTheme = localStorage.getItem("theme")==="light"?lightTheme: darkTheme || initialTheme;
+  const [theme, setTheme] = useState(initTheme);
 
   const toggleTheme = () => {
     if (theme.themeName === "light") {
       setTheme(darkTheme);
+      localStorage.setItem("theme", "dark");
     } else {
       setTheme(lightTheme);
+      localStorage.setItem("theme", "light");
     }
   };
 
   useEffect(() => {
-    // Trigger something
-  });
+    return () => {
+     
+    };
+  }, [theme]); 
 
   return [theme, toggleTheme];
 }
