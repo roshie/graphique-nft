@@ -42,57 +42,51 @@ export default function SliderCards(theme) {
         <Carousel indicators={false}>
           <Carousel.Item>
             <div className="row">
-              <div className="col-12">
-                <div className="row">
-                  {data &&
-                    data.map((list, index) => {
-                      return (
-                        <div
-                          className="d-flex justify-content-center align-items-center card col-xs-2 col-md-4 mx-2"
-                          key={index}
-                          style={{
-                            backgroundColor: theme.theme.card,
-                            width: "12rem",
-                            height: "12rem",
-                            borderRadius: "1rem",
-                          }}
+              {data &&
+                data.map((list, index) => {
+                  return (
+                    <div
+                      className="d-flex justify-content-center align-items-center card col-xs-2 col-md-4 mx-2"
+                      key={index - list.name}
+                      style={{
+                        backgroundColor: theme.theme.card,
+                        width: "12rem",
+                        height: "12rem",
+                        borderRadius: "1rem",
+                      }}
+                    >
+                      <div className="numberCircle p1-bold">{index + 1}</div>
+                      <img
+                        src={list.image_url}
+                        alt="person1"
+                        className="rounded-circle mt-4"
+                        style={{ width: "5rem", height: "5rem" }}
+                      />
+                      <div className="status-circle">
+                        <TiTick
+                          className="symbol"
+                          style={{ color: theme.theme.text }}
+                          size="1rem"
+                        />
+                      </div>
+                      <div className="card-body">
+                        <h5
+                          className="p1-bold"
+                          style={{ color: theme.theme.text }}
                         >
-                          <div className="numberCircle p1-bold">
-                            {index + 1}
-                          </div>
-                          <img
-                            src={list.image_url}
-                            alt="person1"
-                            className="rounded-circle mt-4"
-                            style={{ width: "5rem", height: "5rem" }}
-                          />
-                          <div className="status-circle">
-                            <TiTick
-                              className="symbol"
-                              style={{ color: theme.theme.text }}
-                              size="1rem"
-                            />
-                          </div>
-                          <div className="card-body">
-                            <h5
-                              className="p1-bold"
-                              style={{ color: theme.theme.text }}
-                            >
-                              {list.name}
-                            </h5>
-                            <p
-                              className="text-center"
-                              style={{ color: theme.theme.text }}
-                            >
-                              <span className="p1-bold">{list.price}</span>{" "}
-                              <span className="p1-regular">ETH</span>
-                            </p>
-                          </div>
-                        </div>
-                      );
-                    })}
-                </div>
-              </div>
+                          {list.name}
+                        </h5>
+                        <p
+                          className="text-center"
+                          style={{ color: theme.theme.text }}
+                        >
+                          <span className="p1-bold">{list.price}</span>{" "}
+                          <span className="p1-regular">ETH</span>
+                        </p>
+                      </div>
+                    </div>
+                  );
+                })}
             </div>
           </Carousel.Item>
         </Carousel>
