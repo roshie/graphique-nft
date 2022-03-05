@@ -1,16 +1,3 @@
-export const lightTheme = {
-  themeName: "light",
-  body: colors.white,
-  text: colors.black1,
-  navLink: colors.grey2,
-  navLinkActive: colors.black1,
-};
-
-export const props = {
-  gradient: colors.gradient,
-  primary: colors.redviolet,
-};
-
 export const colors = {
   redviolet: "#DA18A3",
   white: "#FFFFFF",
@@ -25,10 +12,25 @@ export const colors = {
   gradient: "linear-gradient(#EB1484, #C81CC5)",
 };
 
+export const props = {
+  gradient: colors.gradient,
+  primary: colors.redviolet,
+};
+
+export const lightTheme = {
+  themeName: "light",
+  body: colors.white,
+  text: colors.black1,
+  navLink: colors.grey2,
+  navLinkActive: colors.black1,
+  ...props,
+};
+
 export const darkTheme = {
   themeName: "dark",
   body: colors.dark,
   text: colors.white,
   navLink: colors.grey3,
   navLinkActive: colors.white,
+  ...props,
 };
