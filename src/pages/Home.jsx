@@ -1,5 +1,6 @@
 import "../assets/css/Home.css";
 import SliderCards from "../components/SliderCards";
+import HotBids from "../components/HotBids";
 
 export default function Home(props) {
   return (
@@ -14,6 +15,9 @@ export default function Home(props) {
       <div className="my-3">
         <p className="fs-5 fw-bold">Top Sellers</p>
         <SliderCards theme={props.theme} />
+      </div>
+      <div className="my-3">
+        <HotBids theme={props.theme} />
       </div>
     </>
   );

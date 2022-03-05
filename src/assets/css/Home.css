@@ -53,10 +53,6 @@
   background: rgba(255, 255, 255, 0.2);
 }
 
-.img-fluid {
-  height: 350px !important;
-}
-
 .outline {
   border-color: #eb1484;
   color: #eb1484;
