@@ -1,0 +1,49 @@
+.card-banner {
+  background: linear-gradient(
+    101.12deg,
+    #eb1484 27.35%,
+    #c91cc3 99.99%,
+    #c81cc5 100%,
+    #c81cc5 100%
+  ) !important;
+  border-radius: 25px !important;
+  overflow: hidden;
+  width: 992px;
+  height: 300px;
+}
+
+.card-banner:before {
+  content: "";
+  position: absolute;
+  top: -39px;
+  left: 0px;
+  transform: translate(-50%, -50%);
+  width: 338px;
+  height: 338px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.card-banner:after {
+  content: "";
+  position: absolute;
+  bottom: 0px;
+  right: 80px;
+  transform: translate(50%, 50%);
+  width: 338px;
+  height: 338px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.card-text {
+  color: #ffffff;
+  font-family: Gotham;
+}
+
+@media (max-width: 768px) {
+  .card-banner {
+    width: 450px;
+    height: 250px;
+  }
+}
