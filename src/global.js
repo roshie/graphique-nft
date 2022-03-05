@@ -10,11 +10,11 @@ export const GlobalStyles = createGlobalStyle`
     color: ${({ theme }) => theme.text} !important;
   }
   
-  .navbar > .nav-link {
+  .navbar-nav > .nav-link {
     color: ${({ theme }) => theme.navLink} !important;
   }
 
-  .navbar > .nav-link .active {
+  .navbar-nav > .nav-link .active {
     color: ${({ theme }) => theme.navLinkActive} !important;
   }
 
