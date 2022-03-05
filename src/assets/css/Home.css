@@ -62,6 +62,10 @@
   color: #eb1484;
 }
 
+.img-fluid1 {
+  height: 350px !important;
+}
+
 .status-circle {
   width: 15px;
   height: 15px;
