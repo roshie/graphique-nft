@@ -39,16 +39,16 @@ export default function Profile(props) {
             Mia Ayana
           </p>
         </div>
-        <div className="align-items-left d-flex mx-5 px-3 justify-content-between">
-          <div className="align-items-start w-100 py-4 my-3 d-none d-md-block">
+        <div className="d-flex mx-5 px-5 justify-content-center align-items-center">
+          <div className="align-items-start w-75 py-4 my-3 d-none d-md-block">
             {" "}
             <input
               type="text"
-              className="my-auto p-2 my-2 w-100 rounded-1 align-items-start"
+              className="my-auto p-2 ms-2 w-75 rounded-1 align-items-start"
               placeHolder="Search Item Here"
               style={{
-                backgroundColor: props.theme.form,
-                border: "none",
+                backgroundColor: props.theme.footer,
+                border: `1px solid ${props.theme.formBorder}`,
               }}
             />
           </div>
@@ -63,14 +63,14 @@ export default function Profile(props) {
                   class="form-control"
                   placeholder="Recently Listed"
                   aria-label="Text input with dropdown button"
-                  style={{ backgroundColor: props.theme.form, border: "none" }}
+                  style={{ backgroundColor: props.theme.form, border: `1px solid ${props.theme.formBorder}` }}
                 />
                 <button
                   class="btn-outline-secondary dropdown-toggle"
                   type="button"
                   data-bs-toggle="dropdown"
                   aria-expanded="false"
-                  style={{ backgroundColor: props.theme.form, border: "none" }}
+                  style={{ backgroundColor: props.theme.form, border:`1px solid ${props.theme.formBorder}`}}
                 />
                 <ul class="dropdown-menu dropdown-menu-end">
                   <li>Test</li>
