@@ -2,10 +2,10 @@ import React from "react";
 import NavBar from "./NavBar";
 import Footer from "./Footer";
 
-export default function Layout({ children }) {
+export default function Layout({ children , theme}) {
   return (
     <>
-      <NavBar />
+      <NavBar theme={theme}/>
       <div className="container-fluid">{children}</div>
       <Footer />
     </>
