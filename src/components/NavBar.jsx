@@ -1,27 +1,37 @@
 import React from "react";
 import { Navbar, Container, Nav, Button } from "react-bootstrap";
-import logoLight from "../assets/images/logo-light.svg";
-import logoDark from "../assets/images/logo-dark.svg";
+import logo from "../assets/images/logo.svg";
 
-export default function NavBar() {
+
+export default function NavBar(props) {
   return (
     <>
-      <Navbar expand="lg" variant="light">
+      <Navbar expand="lg" variant="light" style={{borderBottom: props.theme.border}}>
         <Container fluid className="mx-2">
           <Navbar.Brand href="/">
             <img
-              src={logoLight}
+              src={logo}
               className="d-inline-block align-top"
               alt="React Bootstrap logo"
             />
           </Navbar.Brand>
+          <p className="my-auto d-none d-md-block" 
+          style={{
+            fontfamily: "Gotham",
+            fontstyle: "normal",
+            fontweight: "bold",
+            fontsize: "16px",
+            lineheight: "18px",
+          }}>Graphique NFT</p>
+          
           <input
             type="text"
-            className="my-auto p-2 rounded-2"
+            className="my-auto mx-3 p-2 ps-4 rounded-2"
             placeHolder="Search Item Here"
             style={{
-              border: "1px solid #E3E1E3",
-              width:"500px"
+              border: "none",
+              width:"500px",
+              backgroundColor: props.theme.form,
             }}
           />
           <Navbar.Toggle aria-controls="basic-navbar-nav" />

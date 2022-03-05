@@ -18,12 +18,14 @@ export default function Profile(props) {
             backgroundSize: "cover",
           }}
           src="https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2444&q=80"
+          alt=" "
         />
         <img
           style={{ marginTop: "-5rem", borderRadius: "50%" }}
           className="mx-auto border border-black"
           width="130px"
           src="https://media.discordapp.net/attachments/949602490486226957/949604788566372392/unknown.png"
+          alt=" "
         />
       </div>
       <div className="py-2 d-flex flex-column mb-4">
