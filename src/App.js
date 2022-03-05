@@ -1,5 +1,20 @@
-function App() {
-  return <div className="App"></div>;
-}
+import React from "react";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
-export default App;
+import Home from "./pages/Home";
+import Profile from "./pages/Profile";
+import Item from "./pages/Item";
+import CreateItem from "./pages/CreateItem";
+
+export default function App() {
+  return (
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/profile" element={<Profile />} />
+        <Route path="/item/:id" element={<Item />} />
+        <Route path="/create-item" element={<CreateItem />} />
+      </Routes>
+    </BrowserRouter>
+  );
+}
