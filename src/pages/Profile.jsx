@@ -12,9 +12,8 @@ export default function Profile(props) {
         }}
       >
         <img
-          className="img-fluid w-100"
-          width="100px"
-          height="20px"
+          className="img-fluid1 w-100"
+          width="100%"
           style={{
             backgroundSize: "cover",
           }}
@@ -29,34 +28,33 @@ export default function Profile(props) {
           alt=" "
         />
       </div>
-      <div className="py-2 d-flex flex-column align-items-center mb-4">
-        <p
-          className="mt-3 mb-4"
-          style={{ fontSize: "18px", fontWeight: "600" }}
-        >
-          Mia Ayana
-        </p>
-        <div className="py-2 d-flex justify-content-between align-items-center">
-          <div class="input-group mb-3 p-2 py-2 d-flex alin-items-start">
-            <div> </div>
-            <div>
-              {" "}
-              <input
-                type="text"
-                className="my-auto p-1 rounded-1 align-items-start"
-                placeholder="Search Item Here"
-                style={{
-                  backgroundColor: props.theme.form,
-                  border: "none",
-                }}
-              />
-            </div>
-          </div>
-          <div
-            class="input-group mb-3 p-2 py-2 align-items-end dropdown d-flex"
-            sx={{ display: "flex", alignItems: "flex-end" }}
+      <div className="py-2 d-flex flex-column mb-4">
+        <div className="align-items-center py-2 d-flex flex-column  mb-4">
+          <p
+            className="mt-3 mb-4"
+            style={{ fontSize: "18px", fontWeight: "600" }}
           >
-            <Form.Group className="mb-3" controlId="exampleForm.Select1">
+            Mia Ayana
+          </p>
+        </div>
+        <div className="align-items-left d-flex mx-5 px-3 justify-content-between">
+          <div className="align-items-start w-100 py-4 my-3 d-none d-md-block">
+            {" "}
+            <input
+              type="text"
+              className="my-auto p-2 my-2 w-100 rounded-1 align-items-start"
+              placeHolder="Search Item Here"
+              style={{
+                backgroundColor: props.theme.form,
+                border: "none",
+              }}
+            />
+          </div>
+          <div className="w-25 mx-3 align-items-end d-none d-md-block">
+            <Form.Group
+              className="mb-3 py-3 my-4"
+              controlId="exampleForm.Select1"
+            >
               <div class="input-group mb-3">
                 <input
                   type="text"
@@ -83,12 +81,26 @@ export default function Profile(props) {
             </Form.Group>
           </div>
         </div>
+        <div className="align-items-left mx-5 px-5">
+          <p
+            className="mt-3 mx-2 px-2 mb-4 text-left py-1"
+            style={{ fontSize: "22px", fontWeight: "600" }}
+          >
+            Items
+          </p>
+        </div>
         <div className="my-3">
           <HotBids theme={props.theme} />
         </div>
-        <Button variant="outline-primary" className="btn outline w-25" href="/">
-          Load More
-        </Button>
+        <div className="align-items-center justfiy-content-center py-2 d-flex flex-column  mb-4">
+          <Button
+            variant="outline-light"
+            className="gradient mx-2 w-25"
+            href="/"
+          >
+            Load More
+          </Button>
+        </div>
       </div>
     </div>
   );
