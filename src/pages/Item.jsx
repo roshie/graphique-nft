@@ -2,8 +2,11 @@ import heart from "../assets/images/heart.svg";
 import heartFill from "../assets/images/heart-filled.svg";
 import { colors } from "../theme";
 import { Tab, Nav, Row, Button } from "react-bootstrap";
+import CheckOutModal from "../components/CheckOutModal";
+import { useState } from "react";
 
 export default function Item(props) {
+  const [openModal, setOpenModal] = useState(false);
   const loremIpsum =
     "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore omnis ipsam corporis sequi illum qui officiis assumenda, architecto beatae laboriosam dolores voluptatem culpa hic dicta expedita aspernatur fugit, itaque corrupti!";
   return (
@@ -116,10 +119,12 @@ export default function Item(props) {
             </Row>
           </Tab.Container>
         </div>
-        <div className="d-flex mt-2">
+        <div className="d-flex my-3">
           <Button
             variant="primary"
-            onClick={() => {}}
+            onClick={() => {
+              setOpenModal(true);
+            }}
             className="p2-regular p-0"
             style={{ width: "40%" }}
           >
@@ -128,13 +133,20 @@ export default function Item(props) {
           <Button
             variant="outline-primary"
             className="mx-2 p2-regular p-0 mb-2"
-            onClick={() => {}}
+            onClick={() => {
+              setOpenModal(true);
+            }}
             style={{ width: "40%" }}
           >
             Make Offer
           </Button>
         </div>
       </div>
+      <CheckOutModal
+        show={openModal}
+        setShow={setOpenModal}
+        theme={props.theme}
+      />
     </div>
   );
 }
