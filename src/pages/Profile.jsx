@@ -102,7 +102,7 @@ export default function Profile(props, { theme }) {
             </Form.Group>
           </div>
         </div>
-        <div className="align-items-left mx-5 px-5">
+        <div className="align-items-left mx-0 mx-md-5 px-0 px-md-5">
           <h1
             className="mt-3 mx-2 px-2 mb-4 ms-0 text-start py-1 justify-content-left"
             style={{ fontSize: "22px", fontWeight: "600" }}

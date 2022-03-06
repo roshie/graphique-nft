@@ -33,9 +33,9 @@ export default function Home(props) {
         <SliderCards theme={props.theme} />
       </div>
 
-      <div className="align-items-left mx-5 px-5">
+      <div className="align-items-left mx-0 mx-md-5 px-0 px-md-5 py-2">
         <h1
-          className="mt-3 mx-2 px-2 mb-4 text-left py-1"
+          className="mt-3 mx-2 px-2 mb-4 text-left py-1 "
           style={{ fontSize: "22px", fontWeight: "600" }}
         >
           Hot Bids
