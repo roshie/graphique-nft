@@ -50,7 +50,7 @@ export default function NavBar({ theme }) {
               <Nav.Link href="/" className="p1-regular">
                 Explore
               </Nav.Link>
-              <Nav.Link href="/profile">My Items</Nav.Link>
+              <Nav.Link href="/profile" style={{minWidth: "100px"}}>My Items</Nav.Link>
               <Nav.Link href="/profile">Following</Nav.Link>
               <div className="d-flex nav-border-top justify-content-center">
                 <Button variant="primary" href="/create-item" className="mx-2">
