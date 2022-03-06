@@ -1,6 +1,6 @@
 import React from "react";
-import heart from "../assets/images/heart.svg";
-import heartFill from "../assets/images/heart-filled.svg";
+import { ReactComponent as Heart } from "../assets/images/heart.svg";
+import { ReactComponent as HeartFill } from "../assets/images/heart-filled.svg";
 import data from "../nftdata.json";
 import { Link } from "react-router-dom";
 
@@ -43,13 +43,17 @@ export default function HotBids(props) {
                           &nbsp;ETH
                         </p>
                         <div>
-                          <img
-                            src={list.liked === true ? heartFill : heart}
-                            className="img-fluid"
-                            width="18"
-                            height="auto"
-                            alt={list.name}
-                          />
+                          {list.liked === true ? (
+                            <HeartFill
+                              style={{ fill: `${props.theme.text} !important` }}
+                            />
+                          ) : (
+                            <Heart
+                              style={{
+                                fill: `${props.theme.text} !important`,
+                              }}
+                            />
+                          )}
                           <span
                             style={{
                               color: props.theme.text,
