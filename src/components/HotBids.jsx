@@ -68,6 +68,7 @@ export default function HotBids(props) {
                           textOverflow: "ellipsis",
                           whiteSpace: "nowrap",
                           overflow: "hidden",
+                          fontFamily:"poppins"
                         }}
                       >
                         {list.name}
