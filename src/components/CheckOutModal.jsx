@@ -1,6 +1,8 @@
 import React from "react";
 import Modal from "react-bootstrap/Modal";
 import Button from "react-bootstrap/Button";
+import { useState } from "react";
+import PaymentSuccessful from "../components/PaymentSuccessful";
 
 export default function CheckOutModal(props) {
   const { nftObj } = props;
@@ -8,6 +10,9 @@ export default function CheckOutModal(props) {
   const handleClose = () => {
     props.setShow(false);
   };
+
+  const [openModal, setOpenModal] = useState(false);
+
   return (
     <>
       <Modal show={props.show} onHide={handleClose} centered>
@@ -84,7 +89,15 @@ export default function CheckOutModal(props) {
             border: `1px solid ${props.theme.border}`,
           }}
         >
-          <Button variant="primary">Checkout</Button>
+          <Button
+            variant="primary"
+            onClick={() => {
+              handleClose();
+              setOpenModal(true);
+            }}
+          >
+            Checkout
+          </Button>
           <Button
             variant="outline-primary"
             onClick={() => props.setShow(false)}
@@ -93,6 +106,12 @@ export default function CheckOutModal(props) {
           </Button>
         </Modal.Footer>
       </Modal>
+      <PaymentSuccessful
+        show={openModal}
+        setShow={setOpenModal}
+        theme={props.theme}
+        nftObj={nftObj}
+      />
     </>
   );
 }
