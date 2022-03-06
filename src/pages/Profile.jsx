@@ -1,8 +1,6 @@
 import React from "react";
-import { Button, Form, Modal } from "react-bootstrap";
+import { Button, Form } from "react-bootstrap";
 import HotBids from "../components/HotBids";
-import { BsInstagram, BsTwitter } from "react-icons/bs";
-import { FaTelegramPlane } from "react-icons/fa";
 import { ReactComponent as Down } from "../assets/images/down-arrow.svg";
 
 export default function Profile(props, { theme }) {

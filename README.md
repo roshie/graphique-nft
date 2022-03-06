@@ -4,21 +4,15 @@
 
 #### **Site URL** - [Graphique NFT]()
 
-![image](logo.svg)
-
----
+![image](/public/logo.svg)
 
 #### **Team Members**
 
 - **Raksha V G**
 - **Rositha R**
 - **Subhiksha Victoria**
-- **Dhivya Dharshini D**
+- **Dhivya Dharshni D**
 - **Veroni Shwetha D**
-
----
-
-#### **Project Description**
 
 #### **Tech stack used**
 
