@@ -23,6 +23,7 @@ export default function NavBar({ theme }) {
               className="my-auto d-none d-md-block"
               style={{
                 fontFamily: "Gotham",
+                src: 'local("GothamBold"), url("../assets/fonts/Gotham-Bold.ttf") format("truetype")',
                 fontStyle: "normal",
                 fontWeight: "bold",
                 fontSize: "16px",
