@@ -10,6 +10,7 @@
 
 #### **Mobile View** 
 
+![collage](https://user-images.githubusercontent.com/67852344/156911230-74ef3185-bdf8-4a77-8514-f7be617c9063.jpg)
 
 
 
