@@ -47,11 +47,19 @@ export default function NavBar({ theme }) {
           </div>
           <Navbar.Collapse>
             <Nav className="ms-auto mt-5 mt-md-0">
-              <Nav.Link href="/" className="p1-regular">
+              <Nav.Link href="/" className="p1-regular navBarLink">
                 Explore
               </Nav.Link>
-              <Nav.Link href="/profile" style={{minWidth: "100px"}}>My Items</Nav.Link>
-              <Nav.Link href="/profile">Following</Nav.Link>
+              <Nav.Link
+                href="/profile"
+                style={{ minWidth: "100px" }}
+                className="p1-regular navBarLink"
+              >
+                My Items
+              </Nav.Link>
+              <Nav.Link href="/profile" className="p1-regular navBarLink">
+                Following
+              </Nav.Link>
               <div className="d-flex nav-border-top justify-content-center">
                 <Button variant="primary" href="/create-item" className="mx-2">
                   Create
