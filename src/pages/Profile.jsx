@@ -2,6 +2,7 @@ import React from "react";
 import { Button, Form } from "react-bootstrap";
 import HotBids from "../components/HotBids";
 import { ReactComponent as Down } from "../assets/images/down-arrow.svg";
+import { FiSearch } from "react-icons/fi";
 
 export default function Profile(props, { theme }) {
   return (
@@ -40,7 +41,13 @@ export default function Profile(props, { theme }) {
         </div>
         <div className="d-flex mx-5 px-5 justify-content-center align-items-center">
           <div className="align-items-start w-75 py-4 my-3 d-none d-md-block">
-            {" "}
+            <div
+              style={{
+                transform: "translate(200%, 20%)",
+              }}
+            >
+              <FiSearch />
+            </div>
             <input
               type="text"
               className="my-auto p-2 ms-2 w-100 align-items-start p3-regular rounded-1"

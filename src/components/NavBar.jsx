@@ -1,5 +1,6 @@
 import React from "react";
 import { Navbar, Container, Nav, Button } from "react-bootstrap";
+import { FiSearch } from "react-icons/fi";
 import logo from "../assets/images/logo.svg";
 
 export default function NavBar({ theme }) {
@@ -31,6 +32,13 @@ export default function NavBar({ theme }) {
             >
               Graphique NFT
             </p>
+            <div
+              style={{
+                transform: "translate(200%, 20%)",
+              }}
+            >
+              <FiSearch />
+            </div>
             <input
               type="text"
               className="my-auto mx-2 p-2 ps-4 w-md-100"
