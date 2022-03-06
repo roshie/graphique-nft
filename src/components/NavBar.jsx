@@ -46,13 +46,13 @@ export default function NavBar({ theme }) {
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
           </div>
           <Navbar.Collapse>
-            <Nav className="ms-auto">
+            <Nav className="ms-auto mt-5 mt-md-0">
               <Nav.Link href="/" className="p1-regular">
                 Explore
               </Nav.Link>
               <Nav.Link href="/profile">My Items</Nav.Link>
               <Nav.Link href="/profile">Following</Nav.Link>
-              <div className="d-flex nav-border-top">
+              <div className="d-flex nav-border-top justify-content-center">
                 <Button variant="primary" href="/create-item" className="mx-2">
                   Create
                 </Button>
