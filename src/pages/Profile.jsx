@@ -42,10 +42,11 @@ export default function Profile(props, { theme }) {
           <div className="align-items-start w-75 py-4 my-3 d-none d-md-block">
             <input
               type="text"
-              className="my-auto p-2 ms-2 w-100 align-items-start p3-regular rounded-1"
+              className="my-auto p-2 ms-2 w-100 align-items-start p3-regular"
               placeholder="Search Item Here"
               style={{
-                borderRadius: `0.7rem !important`,
+                borderRadius: `10px`,
+                height: "40px",
                 backgroundColor: props.theme.footer,
                 border: `1px solid ${props.theme.formBorder}`,
               }}
@@ -103,7 +104,7 @@ export default function Profile(props, { theme }) {
         </div>
         <div className="align-items-left mx-5 px-5">
           <h1
-            className="mt-3 mx-2 px-2 mb-4 text-left py-1 justify-content-center"
+            className="mt-3 mx-2 px-2 mb-4 ms-0 text-start py-1 justify-content-left"
             style={{ fontSize: "22px", fontWeight: "600" }}
           >
             Items
