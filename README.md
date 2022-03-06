@@ -1,6 +1,9 @@
 ## **NIT ConclaveX Designathon**
 
 ### **Graphique NFT Website**
+![image](https://user-images.githubusercontent.com/67852219/156910530-fbc57f2b-2058-486b-b9c3-8da7dc4f755e.png)
+![image](https://user-images.githubusercontent.com/67852219/156910561-e9893434-94d4-4003-a6c7-19e5a554afec.png)
+
 
 #### **Site URL** - [Graphique NFT](https://graphique-nft.vercel.app/)
 
