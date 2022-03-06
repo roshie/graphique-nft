@@ -3,6 +3,7 @@ import { Button, Form, Modal } from "react-bootstrap";
 import HotBids from "../components/HotBids";
 import { BsInstagram, BsTwitter } from "react-icons/bs";
 import { FaTelegramPlane } from "react-icons/fa";
+import { ReactComponent as Down } from "../assets/images/down-arrow.svg";
 
 export default function Profile(props, { theme }) {
   return (
@@ -44,9 +45,10 @@ export default function Profile(props, { theme }) {
             {" "}
             <input
               type="text"
-              className="my-auto p-2 ms-2 w-100 rounded-1 align-items-start"
+              className="my-auto p-2 ms-2 w-100 align-items-start p3-regular rounded-1"
               placeholder="Search Item Here"
               style={{
+                borderRadius: `0.7rem !important`,
                 backgroundColor: props.theme.footer,
                 border: `1px solid ${props.theme.formBorder}`,
               }}
@@ -60,12 +62,17 @@ export default function Profile(props, { theme }) {
               <div class="input-group mb-3">
                 <input
                   type="text"
-                  class="form-control"
+                  class="form-control p3-regular"
                   placeholder="Recently Listed"
                   aria-label="Text input with dropdown button"
                   style={{
                     backgroundColor: props.theme.form,
-                    border: `1px solid ${props.theme.formBorder}`,
+                    borderTop: `1px solid ${props.theme.formBorder}`,
+                    borderBottom: `1px solid ${props.theme.formBorder}`,
+                    borderLeft: `1px solid ${props.theme.formBorder}`,
+                    borderTopLeftRadius: "10px",
+                    borderBottomLeftRadius: "10px",
+                    borderRight: `0px solid ${props.theme.formBorder}`,
                   }}
                 />
                 <button
@@ -75,9 +82,17 @@ export default function Profile(props, { theme }) {
                   aria-expanded="false"
                   style={{
                     backgroundColor: props.theme.form,
-                    border: `1px solid ${props.theme.formBorder}`,
+                    borderTop: `1px solid ${props.theme.formBorder}`,
+                    borderBottom: `1px solid ${props.theme.formBorder}`,
+                    borderRight: `1px solid ${props.theme.formBorder}`,
+                    borderTopRightRadius: "10px",
+                    borderBottomRightRadius: "10px",
+                    borderLeft: `0px solid ${props.theme.formBorder}`,
                   }}
-                />
+                >
+                  {" "}
+                  <Down style={{ stroke: props.theme.paragraph }} />
+                </button>
                 <ul class="dropdown-menu dropdown-menu-end">
                   <li>Test</li>
                   <li>Test</li>
