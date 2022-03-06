@@ -11,11 +11,13 @@ export const GlobalStyles = createGlobalStyle`
   }
   
   .navbar-nav > .nav-link {
-    color: ${({ theme }) => theme.navLink} ;
+    color: ${({ theme }) => theme.navLink} !important;
+    font-weight: 550 !important;
   }
 
   .navbar-nav > .nav-link .active {
     color: ${({ theme }) => theme.navLinkActive} !important;
+    font-weight: 550 !important;
     
   }
 
