@@ -9,7 +9,7 @@
 
 ![image](/public/logo.svg)
 
-Click on The Navbar logo to toggle theme!
+**Click on The Navbar logo to toggle theme!**
 
 #### **Team Members**
 
