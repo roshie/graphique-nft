@@ -6,6 +6,8 @@
 
 ![image](/public/logo.svg)
 
+Click on The Navbar logo to toggle theme!
+
 #### **Team Members**
 
 - **Raksha V G**
