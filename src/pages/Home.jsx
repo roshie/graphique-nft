@@ -1,10 +1,18 @@
 import "../assets/css/Home.css";
 import SliderCards from "../components/SliderCards";
 import HotBids from "../components/HotBids";
-import Check from "../components/CheckOutModal";
 import { Button } from "react-bootstrap";
+import { useEffect } from "react";
 
 export default function Home(props) {
+  useEffect(() => {
+    console.log(window.location.pathname);
+
+    // return () => {
+    //   second
+    // }
+  });
+
   return (
     <>
       <div className="d-flex justify-content-center my-4 ">

@@ -19,6 +19,10 @@ export const GlobalStyles = createGlobalStyle`
     
   }
 
+  .modal-content {
+    background-color: ${({ theme }) => theme.body} !important;
+  }
+
   .nav-item > .nav-link {
     font-size: 16px;
     line-height: 24px;

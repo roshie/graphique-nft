@@ -1,5 +1,5 @@
 import { Form, Button } from "react-bootstrap";
-import Image from "../assets/images/image.svg";
+import Image from "../assets/images/Image.svg";
 import ImageDark from "../assets/images/imagedark.svg";
 
 export default function CreateItem(props) {
@@ -38,7 +38,7 @@ export default function CreateItem(props) {
 
             <div
               style={{
-                border: `2px dashed ${props.theme.imgDropBorder}`,
+                border: `2px dashed ${props.theme.paragraph}`,
                 boxSizing: "border-box",
                 borderRadius: "10px",
                 position: "absolute",

@@ -98,3 +98,7 @@
   top: 7px;
   left: 7px;
 }
+
+.dropdown-toggle::after {
+  display: none !important;
+}
