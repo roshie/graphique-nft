@@ -12,7 +12,10 @@ export default function HotBids(props) {
           data.map((list, index) => {
             return (
               <div key={`${list}-${index}`} className="col-6 col-md-3 mb-4">
-                <Link to={`/item/${index + 1}`}>
+                <Link
+                  to={`/item/${index + 1}`}
+                  className="text-decoration-none"
+                >
                   <div
                     className="card shadow rounded-2"
                     style={{ backgroundColor: props.theme.card }}
