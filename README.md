@@ -2,16 +2,16 @@
 
 ### **Graphique NFT Website**
 
-#### **Site URL** - [Graphique NFT]()
+#### **Site URL** - [Graphique NFT](https://graphique-nft.vercel.app/)
 
 ![image](/public/logo.svg)
 
 #### **Team Members**
 
 - **Raksha V G**
-- **Rositha R**
+- **Roshitha R**
 - **Subhiksha Victoria**
-- **Dhivya Dharshni D**
+- **Dhivya Dharshni S**
 - **Veroni Shwetha D**
 
 #### **Tech stack used**
