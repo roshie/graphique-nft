@@ -36,6 +36,14 @@ const data = [
   },
 ];
 
+const breakPoints = [
+  { width: 1, itemsToShow: 2 },
+  { width: 550, itemsToShow: 3 },
+  { width: 961, itemsToShow: 3 },
+  { width: 768, itemsToShow: 4 },
+  { width: 1000, itemsToShow: 5 },
+];
+
 export default function SliderCards(theme) {
   return (
     <>
@@ -49,6 +57,7 @@ export default function SliderCards(theme) {
               size="1rem"
             />
           }
+          breakPoints={breakPoints}
           itemsToScroll={1}
           prevIcon={
             <BsArrowLeftCircle

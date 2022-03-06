@@ -52,9 +52,9 @@ export default function Profile(props, { theme }) {
               }}
             />
           </div>
-          <div className="w-25 mx-4 align-items-end d-none d-md-block">
+          <div className="w-25 mx-4 p-3 align-items-end d-none d-md-block">
             <Form.Group
-              className="mb-3 py-3 my-4 p-4"
+              className="mb-3 py-3 my-5 p-4"
               controlId="exampleForm.Select1"
             >
               <div class="input-group mb-3">

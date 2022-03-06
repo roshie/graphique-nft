@@ -1,11 +1,19 @@
 ## **NIT ConclaveX Designathon**
 
 ### **Graphique NFT Website**
-![image](https://user-images.githubusercontent.com/67852219/156910530-fbc57f2b-2058-486b-b9c3-8da7dc4f755e.png)
-![image](https://user-images.githubusercontent.com/67852219/156910561-e9893434-94d4-4003-a6c7-19e5a554afec.png)
+
+#### **Desktop View**
+![image](https://user-images.githubusercontent.com/67852219/156911091-11cb016c-6bd2-4f8c-ad91-a3743d6812f8.png)
+![image](https://user-images.githubusercontent.com/67852219/156911216-efeacc62-6bcb-4018-a1f1-ee2362307c13.png)
+![image](https://user-images.githubusercontent.com/67852219/156911104-86607e04-a61b-44d4-bee5-254ea14ade4d.png)
+![image](https://user-images.githubusercontent.com/67852219/156911169-661baaad-8010-489b-8ebb-dba41e5a6b70.png)
+
+#### **Mobile View** 
+
+![collage](https://user-images.githubusercontent.com/67852344/156911230-74ef3185-bdf8-4a77-8514-f7be617c9063.jpg)
 
 
-#### **Site URL** - [Graphique NFT](https://graphique-nft.vercel.app/)
+
 
 ![image](/public/logo.svg)
 
