@@ -3,13 +3,16 @@
 ### **Graphique NFT Website**
 
 #### **Desktop View**
-![image](https://user-images.githubusercontent.com/67852219/156910530-fbc57f2b-2058-486b-b9c3-8da7dc4f755e.png)
-![image](https://user-images.githubusercontent.com/67852219/156910561-e9893434-94d4-4003-a6c7-19e5a554afec.png)
-
+![image](https://user-images.githubusercontent.com/67852219/156911091-11cb016c-6bd2-4f8c-ad91-a3743d6812f8.png)
+![image](https://user-images.githubusercontent.com/67852219/156911104-86607e04-a61b-44d4-bee5-254ea14ade4d.png)
+![image](https://user-images.githubusercontent.com/67852219/156911169-661baaad-8010-489b-8ebb-dba41e5a6b70.png)
+![image](https://user-images.githubusercontent.com/67852219/156911104-86607e04-a61b-44d4-bee5-254ea14ade4d.png)
+![image](https://user-images.githubusercontent.com/67852219/156911169-661baaad-8010-489b-8ebb-dba41e5a6b70.png)
 
 #### **Mobile View** 
-![image](https://user-images.githubusercontent.com/67852219/156911051-7223988f-325a-4cb2-b8bd-495b9772bc64.png)
-![image](https://user-images.githubusercontent.com/67852219/156911066-667b1c67-b3af-4341-9a1e-7bb0ab08fe09.png)
+
+
+
 
 
 ![image](/public/logo.svg)
