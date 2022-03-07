@@ -2,6 +2,14 @@
 
 ### **Graphique NFT Website**
 
+#### **To run the app locally**
+`npm install`
+and 
+`npm start`
+
+#### **Build Command**
+`npm run build`
+
 #### **Desktop View**
 ![image](https://user-images.githubusercontent.com/67852219/156911091-11cb016c-6bd2-4f8c-ad91-a3743d6812f8.png)
 ![image](https://user-images.githubusercontent.com/67852219/156911216-efeacc62-6bcb-4018-a1f1-ee2362307c13.png)
