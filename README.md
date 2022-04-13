@@ -1,6 +1,7 @@
-## **NIT ConclaveX Designathon**
-
 ### **Graphique NFT Website**
+This site was translated from a Figma design, for NIT ConclaveX Designathon<br>
+Link For figma file: https://www.figma.com/file/eXMBlAtRKUc7AS2YRx0ayU/Graphique-NFT-Website?node-id=57%3A9445 <br>
+Link for this site: https://graphique-nft.vercel.app/
 
 #### **To run the app locally**
 `npm install`
