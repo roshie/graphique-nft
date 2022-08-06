@@ -3,6 +3,9 @@ This site was translated from a Figma design, for NIT ConclaveX Designathon<br>
 Link For figma file: https://www.figma.com/file/eXMBlAtRKUc7AS2YRx0ayU/Graphique-NFT-Website?node-id=57%3A9445 <br>
 Link for this site: https://graphique-nft.vercel.app/
 
+![image](/public/logo.svg)
+**Click on The Navbar logo to toggle theme!**
+
 #### **To run the app locally**
 `npm install`
 and 
@@ -23,10 +26,6 @@ and
 
 
 
-
-![image](/public/logo.svg)
-
-**Click on The Navbar logo to toggle theme!**
 
 #### **Team Members**
 
